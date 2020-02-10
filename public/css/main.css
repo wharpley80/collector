@@ -1,0 +1,109 @@
+/************************
+    PLATFORM BUTTONS
+************************/
+
+.platform-menu a {
+    display: block;
+    width: 100%;
+    margin: 1px 0;
+    background-color: #9147ff;
+}
+
+.region-menu a {
+    margin: 0 1px;
+    background-color: #9147ff;
+}
+
+.platform-menu a:hover,
+.region-menu a:hover{
+    background-color: #9f65f7;
+}
+
+.card {
+    background-color: #E6E6FA;
+    background-color: #e2e2e2;
+    background-color: #edeaea;
+}
+
+.platform-header {
+    background-color: #fff;
+    text-align: center;
+}
+
+.platform-header img {
+    height: 100px;
+    width: 100px;
+}
+
+.platform-header h1 {
+    margin-top: 30px;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.125);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.game-wrapper {
+    height: 300px;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.125);
+    background-color: #fff;
+}
+
+.game-cont {
+    margin: 20x;
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.game-release,
+.game-genre,
+.game-region,
+.game-rating {
+    color: red;
+    display: inline-block;
+}
+
+.game-summary {
+    height: 100px;
+}
+
+/************************
+    PAGINATION
+************************/
+.pagination-cont {
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.pagination {
+    width: 72%;
+    margin: 0px auto;  
+}
+
+.pagination a {
+    background-color: #fff;
+    color: rgb(33, 37, 41);
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.125);
+    border-image: initial;
+}
+
+.pagination a:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.125);
+}
+
+.pagination .active {
+    color: #fff;
+    background-color: rgb(108, 117, 125);
+}

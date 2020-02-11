@@ -9,8 +9,12 @@
     background-color: #9147ff;
 }
 
+.platform-menu a .active,
+.region-menu .active {
+    background-color: rgb(108, 117, 125);
+}
+
 .region-menu a {
-    margin: 0 1px;
     background-color: #9147ff;
 }
 
@@ -36,6 +40,8 @@
 }
 
 .platform-header h1 {
+    font-family: "Foobar Pro";
+    font-weight: 500;
     margin-top: 30px;
 }
 
@@ -62,11 +68,16 @@
     text-overflow: ellipsis;
 }
 
+.game-name {
+    font-family: "Foobar Pro";
+    font-weight: 400;
+}
+
 .game-release,
 .game-genre,
 .game-region,
 .game-rating {
-    color: red;
+    color: #9147ff;;
     display: inline-block;
 }
 

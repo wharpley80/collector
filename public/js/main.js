@@ -6,6 +6,11 @@ $(document).ready(function() {
     var pageNumber     = parseInt(pageUrl.split('=', 2)[1]);
     var baseUrl        = pageUrl.split('=', 2)[0];
     var nextPageNumber = pageNumber + 1;
+    var platformId     = pageUrl.split('platform/').pop().split('/')[0];
+
+    $('.platform-menu .active').removeClass('active');
+    $('#platform-' + platformId).addClass('active');
+
     if (pageNumber > 1) {
         var prevPageNumber = pageNumber - 1;
     } else {
@@ -28,7 +33,7 @@ $(document).ready(function() {
 
     $('.pagination').children('a').each(function () {
         if (this.text == pageNumber) {
-            $('.active').removeClass('active');
+            $('.pagination .active').removeClass('active');
             $(this).addClass('active');
         }
     });

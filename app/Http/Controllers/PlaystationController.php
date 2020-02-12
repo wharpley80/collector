@@ -8,7 +8,7 @@ use MarcReichel\IGDBLaravel\Models\Cover;
 use MarcReichel\IGDBLaravel\Models\Platform;
 use MarcReichel\IGDBLaravel\Models\ReleaseDate;
 
-class PlatformController extends Controller
+class PlaystationController extends Controller
 {
     public function index($platformId, $region = null, $page = null)
     {
@@ -34,7 +34,6 @@ class PlatformController extends Controller
             $offset = $pageNumber*20;
         }
 
-$college = Game::where('id', 46537)->get();
         $games = Game::where('platforms', $platformId)->where('release_dates.region', $regionId)->limit(20)->offset($offset)->get();
 
         $allGenesis = [];
@@ -42,6 +41,6 @@ $college = Game::where('id', 46537)->get();
             $allGenesis[] = $game->getGameDisplayInfo();
         }
 
-        return view('platform')->with(['platform' => $platformDisplay, 'games' => $allGenesis, 'region' => $region]);
+        return view('playstation')->with(['platform' => $platformDisplay, 'games' => $allGenesis, 'region' => $region]);
     }
 }

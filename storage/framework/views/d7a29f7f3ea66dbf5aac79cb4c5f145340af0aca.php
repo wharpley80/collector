@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
-    <title><?php echo e(config('app.name', 'Laravel')); ?></title>
+    <title><?php echo e(config('app.name', 'Collectors Dojo')); ?></title>
 
     <!-- Scripts -->
     <script src="<?php echo e(asset('js/app.js')); ?>" defer></script>
@@ -17,6 +17,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/462bd259d98d98460d6767edbdcdac70?family=Foobar+Pro" rel="stylesheet" type="text/css"/>
 
     <!-- Styles -->
     <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet" type="text/css">
@@ -27,8 +28,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
-                    <?php echo e(config('app.name', 'Laravel')); ?>
-
+                    <img src="<?php echo e(asset('img/collectors-dojo-logo-phos.jpg')); ?>" class="logo-header">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<?php echo e(__('Toggle navigation')); ?>">
                     <span class="navbar-toggler-icon"></span>
@@ -36,9 +36,12 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
+                    <div class="navbar-links">
+                        <a href="<?php echo e(URL::to('')); ?>/sega/29/worldwide"><img src="<?php echo e(asset('img/sega-logo.jpg')); ?>" class="sega-logo"></a>
+                        <a href="<?php echo e(url('/genesis')); ?>"><img src="<?php echo e(asset('img/nintendo-logo.jpg')); ?>" class="nintendo-logo"></a>
+                        <a href="<?php echo e(url('')); ?>/playstation/48/worldwide"><img src="<?php echo e(asset('img/playstation-logo.jpg')); ?>" class="playstation-logo"></a>
+                        <a href="<?php echo e(url('/genesis')); ?>"><img src="<?php echo e(asset('img/xbox-logo.png')); ?>" class="xbox-logo"></a>
+                    </div>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

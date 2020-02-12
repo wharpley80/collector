@@ -37440,8 +37440,8 @@ var render = function() {
           _c("div", { staticClass: "row", attrs: { id: game.id } }, [
             _c("div", { staticClass: "col-md-4" }, [
               _c("img", {
-                staticClass: "genesis-cover",
-                attrs: { src: game.cover, height: "250", width: "180" }
+                staticClass: "game-cover",
+                attrs: { src: game.cover }
               })
             ]),
             _vm._v(" "),

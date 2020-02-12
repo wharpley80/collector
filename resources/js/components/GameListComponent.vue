@@ -4,7 +4,7 @@
         <div class="container game-cont">
             <div class="row" :id="game.id">
                 <div class="col-md-4">
-                    <img v-bind:src="game.cover" height="250" width="180" class="genesis-cover">
+                    <img v-bind:src="game.cover" class="game-cover">
                 </div>
                 <div class="col-md-8">
                     <h3 class="game-name">{{ game.name }}</h3>

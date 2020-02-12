@@ -31,7 +31,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/platform', 'PlatformController@index')->name('platform');
+Route::get('/sega', 'SegaController@index')->name('sega');
 
-Route::get('/platform/{platform}/{region?}/{page?}', 'PlatformController@index')->name('platform');
+Route::get('/sega/{platform}/{region?}/{page?}', 'SegaController@index')->name('sega');
 
+Route::get('/playstation/{platform}/{region?}/{page?}', 'PlaystationController@index')->name('playstation');

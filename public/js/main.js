@@ -6,7 +6,8 @@ $(document).ready(function() {
     var pageNumber     = parseInt(pageUrl.split('=', 2)[1]);
     var baseUrl        = pageUrl.split('=', 2)[0];
     var nextPageNumber = pageNumber + 1;
-    var platformId     = pageUrl.split('platform/').pop().split('/')[0];
+    var companyName    = $('.company-name').text();
+    var platformId     = pageUrl.split(companyName + '/').pop().split('/')[0];
 
     $('.platform-menu .active').removeClass('active');
     $('#platform-' + platformId).addClass('active');

@@ -61,6 +61,40 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .home-img-wrapper {
+                width: 60%;
+                margin: 0 auto;
+            }
+
+            .logo-home {
+                width: 100%;
+                height: 100%;
+            }
+
+            .company-links img {
+                margin: 0 20px;
+            }
+
+            .sega-logo {
+                height: 50px;
+                width: 150px;
+            }
+
+            .nintendo-logo {
+                height: 50px;
+                width: 175px;
+            }
+
+            .playstation-logo {
+                height: 75px;
+                width: 150px;
+            }
+
+            .xbox-logo {
+                height: 50px;
+                width: 150px;
+            }
         </style>
     </head>
     <body>
@@ -80,21 +114,14 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laraveling
+                <div class="company-links">
+                    <a href="{{ URL::to('') }}/platform/29/worldwide }}"><img src="{{ asset('img/sega-logo.jpg') }}" class="sega-logo"></a>
+                    <a href="{{ url('/genesis') }}"><img src="{{ asset('img/nintendo-logo.jpg') }}" class="nintendo-logo"></a>
+                    <a href="{{ url('/genesis') }}"><img src="{{ asset('img/playstation-logo.jpg') }}" class="playstation-logo"></a>
+                    <a href="{{ url('/genesis') }}"><img src="{{ asset('img/xbox-logo.png') }}" class="xbox-logo"></a>
                 </div>
-
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                    <a href="{{ url('/genesis') }}">Genesis</a>
+                <div class="home-img-wrapper">
+                    <img src="{{ asset('img/collectors-dojo-logo-phos.jpg') }}" class="logo-home">
                 </div>
             </div>
         </div>

@@ -1,4 +1,42 @@
 /************************
+    NAVBAR
+************************/
+
+.navbar-links {
+    margin: 0 auto;
+}
+
+.navbar-links img {
+    margin: 0 20px;
+    width: 100px;
+}
+
+.sega-logo,
+.nintendo-logo,
+.xbox-logo {
+    height: 30px;
+}
+
+.playstation-logo {
+    height: 50px;
+}
+
+.nav-link {
+    font-family: "Foobar Pro";
+    font-weight: 600;
+    color: #000;
+}
+
+/************************
+    IMAGES
+************************/
+
+.logo-header {
+    height: 50px;
+    width: 200px;
+}
+
+/************************
     PLATFORM BUTTONS
 ************************/
 

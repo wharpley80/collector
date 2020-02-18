@@ -33,7 +33,7 @@
                 <div class="card-header platform-header">
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="{{ $platform[0]['logo'] }}">
+                            <img src="{{ $platform[0]['logo'] ?? '' }}">
                         </div>
                         <div class="col-md-9">
                             <h1>{{ $platform[0]['name'] }}</h1>

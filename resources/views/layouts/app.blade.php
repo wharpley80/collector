@@ -37,9 +37,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <div class="navbar-links">
-                        <a href="{{ URL::to('') }}/sega/29/worldwide"><img src="{{ asset('img/sega-logo.jpg') }}" class="sega-logo"></a>
+                        <a href="{{ URL::to('') }}/sega/sega_genesis_mega_drive/north_america"><img src="{{ asset('img/sega-logo.jpg') }}" class="sega-logo"></a>
                         <a href="{{ url('/genesis') }}"><img src="{{ asset('img/nintendo-logo.jpg') }}" class="nintendo-logo"></a>
-                        <a href="{{ url('') }}/playstation/48/worldwide"><img src="{{ asset('img/playstation-logo.jpg') }}" class="playstation-logo"></a>
+                        <a href="{{ url('') }}/playstation/48/north_america"><img src="{{ asset('img/playstation-logo.jpg') }}" class="playstation-logo"></a>
                         <a href="{{ url('/genesis') }}"><img src="{{ asset('img/xbox-logo.png') }}" class="xbox-logo"></a>
                     </div>
 

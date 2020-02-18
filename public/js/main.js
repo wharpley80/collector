@@ -7,11 +7,18 @@ $(document).ready(function() {
     var baseUrl        = pageUrl.split('=', 2)[0];
     var nextPageNumber = pageNumber + 1;
     var companyName    = $('.company-name').text();
-    var platformId     = pageUrl.split(companyName + '/').pop().split('/')[0];
-
+//console.log(companyName);
+    var platformSlug     = pageUrl.split(companyName + '/').pop().split('/')[0];
+//console.log(platformSlug);
     $('.platform-menu .active').removeClass('active');
-    $('#platform-' + platformId).addClass('active');
+    $('.platform-' + platformSlug).addClass('active');
 
+    //var rest = pageUrl.substring(0, pageUrl.lastIndexOf("/") + 1);
+    var region = pageUrl.substring(pageUrl.lastIndexOf('/') + 1, pageUrl.length);
+    $('.region-menu a').removeClass('active');
+    $('.region-' + region).addClass('active');
+
+/*
     if (pageNumber > 1) {
         var prevPageNumber = pageNumber - 1;
     } else {
@@ -38,4 +45,5 @@ $(document).ready(function() {
             $(this).addClass('active');
         }
     });
+    */
 });

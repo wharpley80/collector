@@ -33,6 +33,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/sega', 'SegaController@index')->name('sega');
 
-Route::get('/sega/{platform}/{region?}/{page?}', 'SegaController@index')->name('sega');
+//Route::get('/sega/{platform}/{region?}/{page?}', 'SegaController@index')->name('sega');
+Route::get('/sega/{platform}/{region?}', 'SegaController@index')->name('sega-game');
 
 Route::get('/playstation/{platform}/{region?}/{page?}', 'PlaystationController@index')->name('playstation');
+
+Route::get('/sega-game', 'SegaGameController@index')->name('sega-game');
+Route::get('/sega-game/{platform}', 'SegaGameController@getGamesByPlatform')->name('sega-game');
+
+Route::get('/single-game/{platform}/{gameId}', 'SingleGameController@index')->name('single-game');

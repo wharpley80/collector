@@ -67,6 +67,21 @@
     background-color: #9f65f7;
 }
 
+.left-sidebar-cont {
+    background-color: #fff;
+}
+
+.company-mascot {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.company-mascot img {
+    width: 80%;
+    margin: 40px auto;
+}
+
 .card {
     background-color: #E6E6FA;
     background-color: #e2e2e2;
@@ -79,8 +94,8 @@
 }
 
 .platform-header img {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
 }
 
 .platform-header h1 {
@@ -115,6 +130,16 @@
 .game-name {
     font-family: "Foobar Pro";
     font-weight: 400;
+    text-align: center;
+}
+
+.game-cont-top-row {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.release-cont {
+    margin-top: 10px;
 }
 
 .game-release,
@@ -125,6 +150,19 @@
     display: inline-block;
 }
 
+.view-more {
+    background-color: #9147ff;
+}
+
+.view-more:hover {
+    background-color: #9f65f7;
+}
+
+.game-cont-top-bottom {
+    width: 100%;
+    margin-right: 10px;
+}
+
 .game-summary {
     height: 100px;
 }
@@ -132,6 +170,18 @@
 /************************
     PAGINATION
 ************************/
+
+nav {
+    text-align: center;
+}
+.pagination {
+    width: 72%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+/*
 .pagination-cont {
     text-align: center;
     width: 80%;
@@ -162,3 +212,15 @@
     color: #fff;
     background-color: rgb(108, 117, 125);
 }
+*/
+
+/************************
+    SINGLE GAME
+************************/
+
+.single-game-cover {
+    height: 400px;
+    width: 100%;
+}
+
+

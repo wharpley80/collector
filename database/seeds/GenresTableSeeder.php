@@ -356,7 +356,43 @@ class GenresTableSeeder extends Seeder
                 'name' => 'Pinball',
                 'slug' => 'pinball',
                 'parent_genre' => 'Simulation',
-                'parent_genre_slug' => 'Simulation'
+                'parent_genre_slug' => 'simulation'
+            ],
+            [
+                'name' => 'First-Person Shooter',
+                'slug' => 'first_person_shooter',
+                'parent_genre' => 'Action',
+                'parent_genre_slug' => 'action'
+            ],
+            [
+                'name' => 'Third-Person Shooter',
+                'slug' => 'Third_person_shooter',
+                'parent_genre' => 'Action',
+                'parent_genre_slug' => 'action'
+            ],
+            [
+                'name' => 'Action',
+                'slug' => 'action',
+                'parent_genre' => 'Action',
+                'parent_genre_slug' => 'action'
+            ],
+            [
+                'name' => 'Action-Adventure',
+                'slug' => 'action_adventure',
+                'parent_genre' => 'Adventure',
+                'parent_genre_slug' => 'adventure'
+            ],
+            [
+                'name' => 'RPG',
+                'slug' => 'rpg',
+                'parent_genre' => 'Role-Playing',
+                'parent_genre_slug' => 'role_playing'
+            ],
+            [
+                'name' => 'Compilation',
+                'slug' => 'compilation',
+                'parent_genre' => 'Other',
+                'parent_genre_slug' => 'other'
             ]
         ]);
     }

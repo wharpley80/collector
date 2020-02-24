@@ -55,6 +55,62 @@ class PublishersTableSeeder extends Seeder
             [
                 'name' => 'Home Data',
                 'slug' => 'home_data'
+            ],
+            [
+                'name' => 'Eidos Interactive',
+                'slug' => 'eidos_interactive'
+            ],
+            [
+                'name' => 'Konami',
+                'slug' => 'konami'
+            ],
+            [
+                'name' => 'Virgin Interactive Entertainment',
+                'slug' => 'virgin_interactive_entertainment'
+            ],
+            [
+                'name' => 'Acclaim',
+                'slug' => 'acclaim'
+            ],
+            [
+                'name' => 'Naxat Soft',
+                'slug' => 'naxat_soft'
+            ],
+            [
+                'name' => 'Natsume',
+                'slug' => 'natsume'
+            ],
+            [
+                'name' => 'Datt Japan',
+                'slug' => 'datt_japan'
+            ],
+            [
+                'name' => 'Time Warner Interactive',
+                'slug' => 'time_warner_interactive'
+            ],
+            [
+                'name' => 'KAZe',
+                'slug' => 'kaze'
+            ],
+            [
+                'name' => 'Core Design',
+                'slug' => 'core_design'
+            ],
+            [
+                'name' => 'Technosoft',
+                'slug' => 'technosoft'
+            ],
+            [
+                'name' => 'Working Designs',
+                'slug' => 'working_designs'
+            ],
+            [
+                'name' => 'Takara',
+                'slug' => 'takara'
+            ],
+            [
+                'name' => 'Midway Games',
+                'slug' => 'midway_games'
             ]
         ]);
     }

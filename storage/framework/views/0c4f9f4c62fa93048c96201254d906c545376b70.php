@@ -115,9 +115,9 @@
 
             <div class="content">
                 <div class="company-links">
-                    <a href="<?php echo e(URL::to('')); ?>/sega/29/worldwide"><img src="<?php echo e(asset('img/sega-logo.jpg')); ?>" class="sega-logo"></a>
+                    <a href="<?php echo e(URL::to('')); ?>/sega/sega_genesis_mega_drive/north_america"><img src="<?php echo e(asset('img/sega-logo.jpg')); ?>" class="sega-logo"></a>
                     <a href="<?php echo e(url('/genesis')); ?>"><img src="<?php echo e(asset('img/nintendo-logo.jpg')); ?>" class="nintendo-logo"></a>
-                    <a href="<?php echo e(url('')); ?>/playstation/48/worldwide"><img src="<?php echo e(asset('img/playstation-logo.jpg')); ?>" class="playstation-logo"></a>
+                    <a href="<?php echo e(url('')); ?>/playstation/48/north_america"><img src="<?php echo e(asset('img/playstation-logo.jpg')); ?>" class="playstation-logo"></a>
                     <a href="<?php echo e(url('/genesis')); ?>"><img src="<?php echo e(asset('img/xbox-logo.png')); ?>" class="xbox-logo"></a>
                 </div>
                 <div class="home-img-wrapper">

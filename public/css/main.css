@@ -28,6 +28,36 @@
 }
 
 /************************
+    SEARCH BAR
+************************/
+
+.search-form-cont {
+    z-index: 10;
+    position: absolute;
+    top: 100;
+    left: 6%;
+    right: 0;
+    width: 88%;
+}
+
+/************************
+    HOME PAGE
+************************/
+
+.home-carousel-cont,
+.single-game-cont {
+    padding-top: 50px;
+}
+
+/************************
+    GENERAL
+************************/
+
+.main-content-body {
+    padding-top: 50px;
+}
+
+/************************
     IMAGES
 ************************/
 
@@ -38,8 +68,6 @@
 
 .game-cover {
     width: 180px;
-    height: 100%;
-    max-height: 250px;
 }
 
 /************************
@@ -82,6 +110,10 @@
     margin: 40px auto;
 }
 
+/************************
+    GAME LISTINGS
+************************/
+
 .card {
     background-color: #E6E6FA;
     background-color: #e2e2e2;
@@ -110,7 +142,7 @@
 }
 
 .game-wrapper {
-    height: 300px;
+    height: 330px;
     margin: 20px 0;
     padding: 20px 0;
     border-radius: 0.25rem;
@@ -150,21 +182,44 @@
     display: inline-block;
 }
 
-.view-more {
+.view-more,
+.add-game-submit {
     background-color: #9147ff;
 }
 
-.view-more:hover {
+.view-more:hover,
+.add-game-submit:hover {
     background-color: #9f65f7;
 }
 
-.game-cont-top-bottom {
+.game-cont-bottom {
     width: 100%;
     margin-right: 10px;
 }
 
 .game-summary {
     height: 100px;
+}
+
+@media (max-width: 770px) {
+
+    .platform-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .game-wrapper {
+        text-align: center;
+        height: 100%;
+    }
+
+    .game-name {
+        font-size: 1.25rem;
+        margin-top: 10px;
+    }
+
+    .game-cont-bottom {
+        margin: 10px auto;
+    }
 }
 
 /************************
@@ -175,9 +230,15 @@ nav {
     text-align: center;
 }
 .pagination {
-    width: 72%;
-    margin: 0px auto;
-    text-align: center;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.pagination-info {
+    text-align: right;
+    font-family: "Foobar Pro";
+    font-weight: 400;
+    color: #000;
 }
 
 
@@ -218,9 +279,69 @@ nav {
     SINGLE GAME
 ************************/
 
+.single-game-title {
+    background-color: #fff;
+    text-align: center;
+}
+
+.single-game-title h1 {
+    font-family: "Foobar Pro";
+    font-weight: 500;
+}
+
+.single-game-body {
+    background-color: #f2efef;
+}
+
 .single-game-cover {
     height: 400px;
     width: 100%;
 }
 
+.single-game-detail-cont label {
+    font-family: "Foobar Pro";
+    font-weight: 400;
+    font-size: 1.1rem;
+}
 
+.single-game-description {
+    margin: 20px 0 30px 0;
+    font-size: 1rem;
+}
+
+a:not([href]) {
+    color: #fff;
+}
+
+a:not([href]):hover {
+    color: #fff;
+}
+
+@media (max-width: 770px) {
+    .single-game-title h1 {
+        font-size: 1.25rem;
+    }
+
+    .single-game-body {
+        text-align: center;
+    }
+
+    .single-game-cover {
+        width: 80%;
+        height: 100%;
+    }
+
+    .single-game-detail-cont {
+        margin-top: 30px;
+    }
+
+    .single-game-description {
+        text-align: left;
+        margin: 10px 0 20px 0;
+    }
+
+    .single-game-detail-cont .view-more {
+        width: 100%;
+        margin: 10px auto;
+    }
+}

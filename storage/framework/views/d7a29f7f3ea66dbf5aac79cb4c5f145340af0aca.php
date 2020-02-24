@@ -79,11 +79,12 @@
                 </div>
             </div>
         </nav>
-
+        
         <main class="py-4">
-            <?php echo $__env->yieldContent('content'); ?>
+        <?php echo $__env->yieldContent('content'); ?>
         </main>
     </div>
 </body>
 </html>
+
 <?php /**PATH /home/vagrant/Code/collector/resources/views/layouts/app.blade.php ENDPATH**/ ?>

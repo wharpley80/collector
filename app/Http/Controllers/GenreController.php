@@ -45,7 +45,7 @@ class GenreController extends Controller
         $genre->name = $request->input('name');
         $genre->slug = $request->input('slug');
         $genre->parent_genre = $request->input('parent_genre');
-        $genre->parent_genre_slug = $request->input('parent_genre_slud');
+        $genre->parent_genre_slug = $request->input('parent_genre_slug');
 
         if ($genre->save()) {
             return new GenreResource($genre);

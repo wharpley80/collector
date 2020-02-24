@@ -78,10 +78,11 @@
                 </div>
             </div>
         </nav>
-
+        
         <main class="py-4">
-            @yield('content')
+        @yield('content')
         </main>
     </div>
 </body>
 </html>
+

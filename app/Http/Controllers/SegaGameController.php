@@ -50,9 +50,7 @@ class SegaGameController extends Controller
         $segaGame->publisher = $request->input('publisher');
         $segaGame->developer = $request->input('developer');
         $segaGame->description = $request->input('description');
-        $segaGame->cover_na = $request->input('cover_na');
-        $segaGame->cover_jp = $request->input('cover_jp');
-        $segaGame->cover_pal = $request->input('cover_pal');
+        $segaGame->cover = $request->input('cover');
         $segaGame->video = $request->input('video');
         $segaGame->price = $request->input('price');
         $segaGame->release_date = $request->input('release_date');

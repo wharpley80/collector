@@ -470,6 +470,7 @@ class ComposerStaticInit6636e1889a6f82d8db766f7257275756
         'App\\Http\\Controllers\\RegionController' => __DIR__ . '/../..' . '/app/Http/Controllers/RegionController.php',
         'App\\Http\\Controllers\\SegaController' => __DIR__ . '/../..' . '/app/Http/Controllers/SegaController.php',
         'App\\Http\\Controllers\\SegaGameController' => __DIR__ . '/../..' . '/app/Http/Controllers/SegaGameController.php',
+        'App\\Http\\Controllers\\SingleGameController' => __DIR__ . '/../..' . '/app/Http/Controllers/SingleGameController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',

@@ -79,7 +79,60 @@ class DevelopersTableSeeder extends Seeder
                 [
                     'name' => 'Home Data',
                     'slug' => 'home_data'
+                ],
+                [
+                    'name' => 'Appaloosa Interactive',
+                    'slug' => 'appaloosa_interactive'
+                ],
+                [
+                    'name' => 'Cave',
+                    'slug' => 'cave'
+                ],
+                [
+                    'name' => 'Attention to Detail',
+                    'slug' => 'attention_to_detail'
+                ],
+                [
+                    'name' => 'Point of View',
+                    'slug' => 'point_of_view'
+                ],
+                [
+                    'name' => 'Tamsoft',
+                    'slug' => 'tamsoft'
+                ],
+                [
+                    'name' => 'Takara',
+                    'slug' => 'takara'
+                ],
+                [
+                    'name' => 'Scarab',
+                    'slug' => 'scarab'
+                ],
+                [
+                    'name' => 'Jumpin Jack',
+                    'slug' => 'jumpin_jack'
+                ],
+                [
+                    'name' => 'Digital Factory',
+                    'slug' => 'digital_factory'
+                ],
+                [
+                    'name' => 'KAZe',
+                    'slug' => 'kaze'
+                ],
+                [
+                    'name' => 'Core Design',
+                    'slug' => 'core_design'
+                ],
+                [
+                    'name' => 'Sega AM2',
+                    'slug' => 'sega_am2'
+                ],
+                [
+                    'name' => 'Digital Eclipse',
+                    'slug' => 'digital_eclipse'
                 ]
-            ]);
+            ]
+        );
     }
 }

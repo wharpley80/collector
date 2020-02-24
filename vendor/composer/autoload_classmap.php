@@ -29,6 +29,7 @@ return array(
     'App\\Http\\Controllers\\RegionController' => $baseDir . '/app/Http/Controllers/RegionController.php',
     'App\\Http\\Controllers\\SegaController' => $baseDir . '/app/Http/Controllers/SegaController.php',
     'App\\Http\\Controllers\\SegaGameController' => $baseDir . '/app/Http/Controllers/SegaGameController.php',
+    'App\\Http\\Controllers\\SingleGameController' => $baseDir . '/app/Http/Controllers/SingleGameController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\CheckForMaintenanceMode' => $baseDir . '/app/Http/Middleware/CheckForMaintenanceMode.php',

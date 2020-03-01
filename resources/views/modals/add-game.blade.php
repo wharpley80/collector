@@ -84,7 +84,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="add-game-submit btn btn-primary" id="{{ $game->id . '-' . $companyId }}">Add</button>
+                <button type="button" class="add-game-submit btn btn-primary" id="{{ $game->id . '-' . $game->company_id }}">Add</button>
             </div>
         </div>
     </div>

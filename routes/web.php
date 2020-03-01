@@ -27,7 +27,9 @@ Route::get('/sega', 'SegaController@index')->name('sega');
 
 //Route::get('/sega/{platform}/{region?}/{page?}', 'SegaController@index')->name('sega');
 Route::get('/sega/{platform}/{region?}', 'SegaController@index')->name('sega-game');
-Route::post('/sega', 'SegaController@search');
+Route::get('/nintendo/{platform}/{region?}', 'NintendoController@index')->name('nintendo');
+Route::get('/sony/{platform}/{region?}', 'SonyController@index')->name('sony');
+Route::get('/microsoft/{platform}/{region?}', 'MicrosoftController@index')->name('microsoft');
 
 Route::get('/playstation/{platform}/{region?}/{page?}', 'PlaystationController@index')->name('playstation');
 
@@ -36,3 +38,12 @@ Route::get('/sega-game/{platform}', 'SegaGameController@getGamesByPlatform')->na
 
 Route::get('/single-game/{platform}/{gameId}', 'SingleGameController@index')->name('single-game');
 Route::post('/single-game', 'SingleGameController@addUserGame');
+
+Route::post('/search', 'SearchController@search');
+Route::post('/search/search-my-collection', 'SearchController@searchMyCollection');
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/my-collection', 'MyCollectionController@index')->name('my-collection');
+    Route::get('/collection-single/{game}', 'CollectionSingleController@index')->name('collection-single');
+    
+});

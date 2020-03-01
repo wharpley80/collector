@@ -12,6 +12,7 @@ class CompanyTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         //DB::table('logos')->truncate();
 
         Company::insert(
@@ -27,13 +28,13 @@ class CompanyTableSeeder extends Seeder
                 'logo_id' => 2
             ],
             [
-                'name' => 'Playstation',
-                'slug' => 'playstation',
+                'name' => 'Sony',
+                'slug' => 'sony',
                 'logo_id' => 3
             ],
             [
-                'name' => 'XBOX',
-                'slug' => 'xbox',
+                'name' => 'Microsoft',
+                'slug' => 'microsoft',
                 'logo_id' => 4
             ]
         ]);

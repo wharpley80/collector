@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+/*
 use MarcReichel\IGDBLaravel\Models\Game;
 use MarcReichel\IGDBLaravel\Models\Cover;
-//use MarcReichel\IGDBLaravel\Models\Platform;
+use MarcReichel\IGDBLaravel\Models\Platform;
 use MarcReichel\IGDBLaravel\Models\ReleaseDate;
 use MarcReichel\IGDBLaravel\Models\Company;
-use App\SegaGame;
+*/
+use App\Game;
 use App\Platform;
 use App\Region;
 use App\Logo;
@@ -18,35 +20,24 @@ class SegaController extends Controller
     public function index($platform, $region = null, $page = null)
     //public function index($platformId, $region = null, $page = null)
     {
-        /*
-        $text = 'thre';
-        $text = $text . '%';
-   
-        $testGames = SegaGame::where('name', 'like', $text)->get();
-foreach ($testGames as $testGame) {
-    var_dump($testGame);
-}
-*/
 
-
-
-        $selectedPlatform = Platform::where('slug', '=', $platform)->get();
-        $logoImage = Logo::where('id', '=', $selectedPlatform[0]->logo_id)->get()[0]->image;
+        $selectedPlatform = Platform::where('slug', '=', $platform)->first();
+        $logoImage = Logo::where('id', '=', $selectedPlatform->logo_id)->first()->image;
         $regions = [5];
 
         if ($region) {
-            $regions[] = Region::where('slug', '=', $region)->get()[0]->id;
+            $regions[] = Region::where('slug', '=', $region)->first()->id;
         }
 
-        $segaGames = SegaGame::where('platform', '=', $selectedPlatform[0]->id)
-            ->whereIn('region', $regions)
+        $segaGames = Game::where('platform_id', '=', $selectedPlatform->id)
+            ->whereIn('region_id', $regions)
             ->paginate(5);
 
 /*
 
         $platform = Platform::where('id', $platformId)->get();
-        var_dump($platform[0]); 
-        $platformDisplay[] = $platform[0]->getPlatformDisplayInfo();
+        var_dump($platform); 
+        $platformDisplay[] = $platform->first()->getPlatformDisplayInfo();
         $offset = 0;
 
         if ($region === 'north_america') {
@@ -83,37 +74,11 @@ var_dump($allGenesis);
         return view('sega-game')->with(
             [
                 'games'          => $segaGames,
-                'platform'       => $selectedPlatform[0],
+                'platform'       => $selectedPlatform,
                 'logo'           => $logoImage,
                 'paginationInfo' => $paginationInfo
             ]
         );
-    }
-
-    /**
-     * Returns games that have a name "LIKE" the given string.
-     * 
-     * @param String
-     */
-    public function search(Request $request)
-    {
-        $text = $request->input('text');
-   
-        $segaGames = SegaGame::where('name', 'like', $text . '%')->get();
-        $searchResults =[];
-
-        foreach ($segaGames as $segaGame) {
-            $subArray = [];
-            $subArray['id'] = $segaGame->id;
-            $subArray['platform_slug'] = $segaGame->getPlatformSlug();
-            $subArray['display_info'] = $segaGame->name . ' - ' . 
-                $segaGame->getPlatformName() . ' - ' . 
-                $segaGame->getRegionName() . '(' . 
-                $segaGame->getRegionAbbreviation() . ')'; 
-            $searchResults[] = $subArray;
-        }
-
-        return response()->json($searchResults);
     }
 
     /**

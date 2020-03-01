@@ -38,9 +38,9 @@
                     <!-- Left Side Of Navbar -->
                     <div class="navbar-links">
                         <a href="<?php echo e(URL::to('')); ?>/sega/sega_genesis_mega_drive/north_america"><img src="<?php echo e(asset('img/sega-logo.jpg')); ?>" class="sega-logo"></a>
-                        <a href="<?php echo e(url('/genesis')); ?>"><img src="<?php echo e(asset('img/nintendo-logo.jpg')); ?>" class="nintendo-logo"></a>
-                        <a href="<?php echo e(url('')); ?>/playstation/48/north_america"><img src="<?php echo e(asset('img/playstation-logo.jpg')); ?>" class="playstation-logo"></a>
-                        <a href="<?php echo e(url('/genesis')); ?>"><img src="<?php echo e(asset('img/xbox-logo.png')); ?>" class="xbox-logo"></a>
+                        <a href="<?php echo e(URL::to('')); ?>/nintendo/nintendo_entertainment_system/north_america"><img src="<?php echo e(asset('img/nintendo-logo.jpg')); ?>" class="nintendo-logo"></a>
+                        <a href="<?php echo e(URL::to('')); ?>/sony/playstation_4/north_america"><img src="<?php echo e(asset('img/sony-logo.jpg')); ?>" class="playstation-logo"></a>
+                        <a href="<?php echo e(URL::to('')); ?>/microsoft/original_xbox/north_america"><img src="<?php echo e(asset('img/xbox-logo.png')); ?>" class="xbox-logo"></a>
                     </div>
 
                     <!-- Right Side Of Navbar -->
@@ -62,12 +62,15 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="<?php echo e(route('my-collection')); ?>">My Collection</a>
                                     <a class="dropdown-item" href="<?php echo e(route('logout')); ?>"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         <?php echo e(__('Logout')); ?>
 
                                     </a>
+                                    
+
 
                                     <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
                                         <?php echo csrf_field(); ?>

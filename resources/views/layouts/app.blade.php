@@ -38,9 +38,9 @@
                     <!-- Left Side Of Navbar -->
                     <div class="navbar-links">
                         <a href="{{ URL::to('') }}/sega/sega_genesis_mega_drive/north_america"><img src="{{ asset('img/sega-logo.jpg') }}" class="sega-logo"></a>
-                        <a href="{{ url('/genesis') }}"><img src="{{ asset('img/nintendo-logo.jpg') }}" class="nintendo-logo"></a>
-                        <a href="{{ url('') }}/playstation/48/north_america"><img src="{{ asset('img/playstation-logo.jpg') }}" class="playstation-logo"></a>
-                        <a href="{{ url('/genesis') }}"><img src="{{ asset('img/xbox-logo.png') }}" class="xbox-logo"></a>
+                        <a href="{{ URL::to('') }}/nintendo/nintendo_entertainment_system/north_america"><img src="{{ asset('img/nintendo-logo.jpg') }}" class="nintendo-logo"></a>
+                        <a href="{{ URL::to('') }}/sony/playstation_4/north_america"><img src="{{ asset('img/sony-logo.jpg') }}" class="playstation-logo"></a>
+                        <a href="{{ URL::to('') }}/microsoft/original_xbox/north_america"><img src="{{ asset('img/xbox-logo.png') }}" class="xbox-logo"></a>
                     </div>
 
                     <!-- Right Side Of Navbar -->
@@ -62,11 +62,14 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('my-collection') }}">My Collection</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+                                    
+
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf

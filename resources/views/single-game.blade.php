@@ -56,7 +56,7 @@
                             </div>         
                         </div>
                     </div>
-                    @extends('layouts.add-game-modal')
+                    @extends('modals.add-game')
                 </div>
             </div>
         </div>

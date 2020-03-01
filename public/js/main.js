@@ -5,6 +5,14 @@ $(document).ready(function() {
     var companyName  = $('.company-name').text();
     var platformSlug = pageUrl.split(companyName + '/').pop().split('/')[0];
 
+    ajaxConfig = function() {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    }
+
     setActivePlatform = function() {
         $('.platform-menu .active').removeClass('active');
         $('.platform-' + platformSlug).addClass('active');
@@ -18,10 +26,13 @@ $(document).ready(function() {
     }
 
     clearSearchResults = function() {
-        //$('#game-search').focusout(function() {
-        $('.search-result-list').focusout(function() {
-            $('.list-group-item').remove();
-            $('#game-search').val('');
+        $(document).on('click', function (e) {
+            var clickId = $(e.target).attr('id');
+            var searchResultLength = $(e.target).parents('.search-result').length;
+
+            if (searchResultLength === 0 && clickId !== 'game-search') {
+                $('.list-group-item').remove();
+            }
         });
     }
 
@@ -29,43 +40,50 @@ $(document).ready(function() {
         $('#game-search').on('keyup', function() {
             $('.list-group-item').remove();
             var searchText = $('#game-search').val();
-
-            if (searchText.length > 3) {
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
-
-                jQuery.ajax({
-                    url: "/sega",
-                    method: 'post',
-                    data: {
-                        text: searchText
-                    },
-                    success: function(result) {
-                        var resultList = $('ul.search-result-list');
-                        $.each(result, function(i) {
-                            if ($('#game-' + result[i]['id']).length == 0) {
-                                var resultUrl = document.location.origin + '/single-game/' + result[i]['platform_slug'] + '/' + result[i]['id'];
-                                var resultLink = $('<a/>')
-                                    .addClass('ui-all')
-                                    .attr('href', resultUrl)
-                                    .appendTo(resultList);
-
-                                var li = $('<li/>')
-                                    .addClass('list-group-item')
-                                    .attr('id', 'game-' + result[i]['id'])
-                                    .text(result[i]['display_info'])
-                                    .appendTo(resultLink);
-                            }
-                        });
-
-                        $('.search-result').removeAttr('hidden'); 
-                    }
-                });
-            }
+            returnSearchResults(searchText, '/search');
         });
+    }
+
+    getMySearchResults = function() {
+        $('#my-game-search').on('keyup', function() {
+            $('.list-group-item').remove();
+            var searchText = $('#my-game-search').val();
+            returnSearchResults(searchText, '/search/search-my-collection');
+        });
+    }
+
+    returnSearchResults = function(text, url) {
+        if (text.length > 3) {
+            ajaxConfig();
+
+            jQuery.ajax({
+                url: url,
+                method: 'post',
+                data: {
+                    text: text
+                },
+                success: function(result) {
+                    var resultList = $('ul.search-result-list');
+                    $.each(result, function(i) {
+                        if ($('#game-' + result[i]['id']).length == 0) {
+                            var resultUrl = document.location.origin + '/single-game/' + result[i]['platform_slug'] + '/' + result[i]['id'];
+                            var resultLink = $('<a/>')
+                                .addClass('ui-all')
+                                .attr('href', resultUrl)
+                                .appendTo(resultList);
+
+                            var li = $('<li/>')
+                                .addClass('list-group-item')
+                                .attr('id', 'game-' + result[i]['id'])
+                                .text(result[i]['display_info'])
+                                .appendTo(resultLink);
+                        }
+                    });
+
+                    $('.search-result').removeAttr('hidden'); 
+                }
+            });
+        }
     }
 
     toggleAddUserGameBoxes = function() {
@@ -94,12 +112,7 @@ $(document).ready(function() {
             gameData['manual']      = $('#game-manual').val();
             gameData['condition']   = $('#game-condition').val();
             gameData['comment']     = $.trim($('#comment').val());
-
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
+            ajaxConfig();
 
             jQuery.ajax({
                 url: "/single-game",
@@ -114,6 +127,9 @@ $(document).ready(function() {
 
                     if (result['status'] == 'success') {
                         $('.alert-success').text(result['message']).removeAttr('hidden').delay(5000).fadeOut();
+                        setTimeout(function() {
+                            window.location.href = '/my-collection';
+                        }, 2000);
                     }
 
                     if (result['status'] == 'fail') {
@@ -124,45 +140,38 @@ $(document).ready(function() {
         });
     }
 
+    deleteUserGame = function() {
+        $('.delete-my-single').click(function(e) {
+            var userGameId = $(this).attr('id');
+            ajaxConfig();
+
+            jQuery.ajax({
+                url: "/api/user_game/" + userGameId,
+                method: 'delete',
+                success: function(result) {
+                    console.log('hhhhhhhh');
+                    console.log(result.data['id']);
+                    if (result.data['id'] == userGameId) {
+                        $('#confirmDeleteModal').modal('toggle');
+                        $('html, body').scrollTop(0);
+                        $('.alert-success').text('The game was successfully removed from your collection.').removeAttr('hidden').delay(5000).fadeOut();
+                        setTimeout(function() {
+                            window.location.href = '/my-collection';
+                        }, 2000);
+                    } else {
+                        $('.alert-danger').text('We were unable to delete this game from your collection.').removeAttr('hidden').delay(5000).fadeOut();
+                    }   
+                }
+            });
+        });
+    }
+
     setActivePlatform();
     setActiveRegion();
     clearSearchResults();
     getSearchResults();
+    getMySearchResults();
     toggleAddUserGameBoxes();
     addUserGame();
-
-/*
-    var prevPageUrl    = $('.paginate-prev').attr('href');
-    var nextPageUrl    = $('.paginate-next ').attr('href');
-    var currentUrl     = pageUrl.split('=', 2)[0];
-    var pageNumber     = parseInt(pageUrl.split('=', 2)[1]);
-    var nextPageNumber = pageNumber + 1;
-
-    if (pageNumber > 1) {
-        var prevPageNumber = pageNumber - 1;
-    } else {
-        var prevPageNumber = 1;
-    }
-
-    prevPageUrl = prevPageUrl + prevPageNumber;
-    nextPageUrl = nextPageUrl + nextPageNumber;
-
-    if (pageNumber > 3) {
-        $('.paginate-1').text(pageNumber - 2).attr('href', currentUrl + '='  + (pageNumber - 2));
-        $('.paginate-2').text(pageNumber - 1).attr('href', currentUrl + '='  + (pageNumber - 1));
-        $('.paginate-3').text(pageNumber).attr('href', currentUrl + '='  + pageNumber);
-        $('.paginate-4').text(pageNumber + 1).attr('href', currentUrl + '='  + (pageNumber + 1));
-        $('.paginate-5').text(pageNumber + 2).attr('href', currentUrl + '='  + (pageNumber + 2));
-    }
-
-    $('.paginate-prev').attr('href', prevPageUrl);
-    $('.paginate-next').attr('href', nextPageUrl);
-
-    $('.pagination').children('a').each(function () {
-        if (this.text == pageNumber) {
-            $('.pagination .active').removeClass('active');
-            $(this).addClass('active');
-        }
-    });
-    */
+    deleteUserGame();
 });

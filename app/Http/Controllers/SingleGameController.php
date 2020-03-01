@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\SegaGame;
+use App\Game;
 use App\Platform;
 use App\UserGame;
 use Auth;
@@ -12,15 +12,8 @@ class SingleGameController extends Controller
 {
     public function index($platform, $gameId)
     {
-        $selectedPlatform = Platform::where('slug', '=', $platform)->get()[0];
-
-        if ($selectedPlatform->slug == 'sega_genesis_mega_drive') {
-            $game = SegaGame::where('id', '=', $gameId)->get()[0];
-        }
-
-        if ($selectedPlatform->slug == 'sega_saturn') {
-            $game = SegaGame::where('id', '=', $gameId)->get()[0];
-        }
+        $selectedPlatform = Platform::where('slug', '=', $platform)->first();
+        $game = Game::where('id', '=', $gameId)->first();
 
         $genres = $game->getGameGenres();
         $publisherName = $game->getPublisherName();
@@ -31,8 +24,7 @@ class SingleGameController extends Controller
                 'game' => $game,
                 'genres' => $genres,
                 'publisherName' => $publisherName,
-                'developers' => $developers,
-                'companyId' => $game->getCompanyId()
+                'developers' => $developers
             ]
         );
     }

@@ -73,6 +73,13 @@ Route::post('sega_game', 'SegaGameController@store');
 Route::put('sega_game', 'SegaGameController@store');
 Route::delete('sega_game/{id}', 'SegaGameController@destroy');
 
+// Game Routes
+Route::get('games', 'GameController@index');
+Route::get('game/{id}', 'GameController@show');
+Route::post('game', 'GameController@store');
+Route::put('game', 'GameController@store');
+Route::delete('game/{id}', 'GameController@destroy');
+
 // UserGame Routes
 Route::get('user_games', 'UserGameController@index');
 Route::get('user_game/{id}', 'UserGameController@show');

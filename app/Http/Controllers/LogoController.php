@@ -17,6 +17,7 @@ class LogoController extends Controller
     public function index()
     {
         $logos = Logo::paginate(5);
+        $logos = Logo::all();
 
         return LogoResource::collection($logos);
     }

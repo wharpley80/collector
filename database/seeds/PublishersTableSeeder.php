@@ -12,6 +12,7 @@ class PublishersTableSeeder extends Seeder
      */
     public function run()
     {
+        //DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         //DB::table('publishers')->truncate();
 
         Publisher::insert(

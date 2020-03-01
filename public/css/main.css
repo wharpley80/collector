@@ -57,6 +57,17 @@
     padding-top: 50px;
 }
 
+label {
+    font-family: "Foobar Pro";
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+hr {
+    height: 1px; 
+    background: #e2e2e2; 
+}
+
 /************************
     IMAGES
 ************************/
@@ -120,7 +131,8 @@
     background-color: #edeaea;
 }
 
-.platform-header {
+.platform-header,
+.card-header {
     background-color: #fff;
     text-align: center;
 }
@@ -130,10 +142,11 @@
     width: 100%;
 }
 
-.platform-header h1 {
+.platform-header h1,
+.card-header h1 {
     font-family: "Foobar Pro";
     font-weight: 500;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .card-body {
@@ -294,7 +307,7 @@ nav {
 }
 
 .single-game-cover {
-    height: 400px;
+    max-height: 400px;
     width: 100%;
 }
 
@@ -344,4 +357,41 @@ a:not([href]):hover {
         width: 100%;
         margin: 10px auto;
     }
+}
+
+/************************
+    MY COLLECTION
+************************/
+
+.my-collection-cont {
+    padding-top: 50px;
+}
+
+.empty-collection {
+    width: 100%;
+    text-align: center;
+}
+
+.collection-cover-cont {
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.collection-game-cover {
+    width: 100%;
+}
+
+/************************
+    COLLECTION SINGLE
+************************/
+
+.my-game-details-cont {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.my-game-details-cont h2 {
+    font-family: "Foobar Pro";
+    font-weight: 500;
 }

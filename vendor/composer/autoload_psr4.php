@@ -48,7 +48,6 @@ return array(
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'MarcReichel\\IGDBLaravel\\' => array($vendorDir . '/marcreichel/igdb-laravel/src'),
     'League\\Flysystem\\' => array($vendorDir . '/league/flysystem/src'),
-    'League\\CommonMark\\Ext\\Table\\' => array($vendorDir . '/league/commonmark-ext-table/src'),
     'League\\CommonMark\\' => array($vendorDir . '/league/commonmark/src'),
     'Laravel\\Ui\\' => array($vendorDir . '/laravel/ui/src'),
     'Laravel\\Tinker\\' => array($vendorDir . '/laravel/tinker/src'),

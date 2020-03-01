@@ -109,6 +109,7 @@ class UserGameController extends Controller
 
         if ($userGame->delete()) {
             return new UserGameResource($userGame);
+
         }
     }
 }

@@ -12,8 +12,8 @@ class PlaystationController extends Controller
 {
     public function index($platformId, $region = null, $page = null)
     {
-        $platform = Platform::where('id', $platformId)->get();
-        $platformDisplay[] = $platform[0]->getPlatformDisplayInfo();
+        $platform = Platform::where('id', $platformId)->first();
+        $platformDisplay[] = $platform->getPlatformDisplayInfo();
         $offset = 0;
 
         if ($region === 'north_america') {

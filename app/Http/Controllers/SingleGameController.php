@@ -58,8 +58,8 @@ class SingleGameController extends Controller
                         'purchase_new' => intval($gameData['purchaseNew']), 
                         'cib' => intval($gameData['cib']), 
                         'cart_disc' => intval($gameData['cartDisc']), 
-                        'manual' => intval($gameData['box']), 
-                        'box' => intval($gameData['manual']), 
+                        'manual' => intval($gameData['manual']), 
+                        'box' => intval($gameData['box']), 
                         'condition' => intval($gameData['condition']), 
                         'comment' => $gameData['comment']
                     ]

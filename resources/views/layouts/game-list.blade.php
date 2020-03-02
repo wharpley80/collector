@@ -2,18 +2,18 @@
     <div class="card">
         <div class="card-header platform-header">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <img src="{{ $logo }}">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <h1>{{ $platform->name }}</h1>
                 </div>
             </div>
         </div>
         <div class="btn-group region-menu" role="group" aria-label="Basic example">
-            <a type="button" class="region-north_america btn btn-secondary active" href="{{ URL::to('') }}/sega/{{ $platform->slug }}/north_america">NA</a>
-            <a type="button" class="region-japan btn btn-secondary" href="{{ URL::to('') }}/sega/{{ $platform->slug }}/japan">JP</a>
-            <a type="button" class="region-europe btn btn-secondary" href="{{ URL::to('') }}/sega/{{ $platform->slug }}/europe">PAL</a>
+            <a type="button" class="region-north_america btn btn-secondary active" href="{{ URL::to('') }}/{{ $company->slug }}/{{ $platform->slug }}/north_america">NA</a>
+            <a type="button" class="region-japan btn btn-secondary" href="{{ URL::to('') }}/{{ $company->slug }}/{{ $platform->slug }}/japan">JP</a>
+            <a type="button" class="region-europe btn btn-secondary" href="{{ URL::to('') }}/{{ $company->slug }}/{{ $platform->slug }}/europe">PAL</a>
         </div>    
         <div class="card-body">
             <p class="pagination-info">{{ $paginationInfo }}</p>

@@ -19,34 +19,34 @@
             </div>
             <div class="left-sidebar-cont d-none d-md-block">
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/sonic-finger-wag.jpg') }}" >
+                    <img src="{{ asset('assets/img/sega/sonic-finger-wag.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/axel-stone.jpg') }}" >
+                    <img src="{{ asset('assets/img/sega/axel-stone.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/nights-mascot.png') }}" >
+                    <img src="{{ asset('assets/img/sega/nights-mascot.png') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/falcon-powerstone.jpg') }}" >
+                    <img src="{{ asset('assets/img/sega/falcon-powerstone.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/outrun-car.jpg') }}" >
+                    <img src="{{ asset('assets/img/sega/outrun-car.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/golden-axe-mascot.jpg') }}" >
+                    <img src="{{ asset('assets/img/sega/golden-axe-mascot.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/shinobi-3.jpg') }}" >
+                    <img src="{{ asset('assets/img/sega/shinobi-3.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/jet-grind-radio.jpg') }}" >
+                    <img src="{{ asset('assets/img/sega/jet-grind-radio.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/alex-kidd.jpg') }}" >
+                    <img src="{{ asset('assets/img/sega/alex-kidd.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/sega-sports.png') }}" >
+                    <img src="{{ asset('assets/img/sega/sega-sports.png') }}" >
                 </div>
             </div>
         </div>

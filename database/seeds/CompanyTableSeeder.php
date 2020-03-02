@@ -13,7 +13,7 @@ class CompanyTableSeeder extends Seeder
     public function run()
     {
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
-        //DB::table('logos')->truncate();
+        //DB::table('company')->truncate();
 
         Company::insert(
         [
@@ -38,5 +38,6 @@ class CompanyTableSeeder extends Seeder
                 'logo_id' => 4
             ]
         ]);
+    
     }
 }

@@ -12,6 +12,7 @@ class DevelopersTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         //DB::table('developers')->truncate();
 
         Developer::insert(
@@ -131,8 +132,33 @@ class DevelopersTableSeeder extends Seeder
                 [
                     'name' => 'Digital Eclipse',
                     'slug' => 'digital_eclipse'
+                ],
+                [
+                    'name' => 'Capcom',
+                    'slug' => 'capcom'
+                ],
+                [
+                    'name' => 'Konami',
+                    'slug' => 'konami'
+                ],
+                [
+                    'name' => 'Aspect',
+                    'slug' => 'aspect'
+                ],
+                [
+                    'name' => 'Malibu Interactive',
+                    'slug' => 'malibu_interactive'
+                ],
+                [
+                    'name' => 'EA Canada',
+                    'slug' => 'ea_canada'
+                ],
+                [
+                    'name' => 'Studio 128',
+                    'slug' => 'studio_128'
                 ]
             ]
         );
+
     }
 }

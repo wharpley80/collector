@@ -20,34 +20,19 @@
             </div>
             <div class="left-sidebar-cont d-none d-md-block">
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/sonic-finger-wag.jpg') }}" >
+                    <img src="{{ asset('assets/img/sony/kratos-mascot.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/axel-stone.jpg') }}" >
+                    <img src="{{ asset('assets/img/sony/ratchet-mascot.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/nights-mascot.png') }}" >
+                    <img src="{{ asset('assets/img/sony/nathan-drake-mascot.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/falcon-powerstone.jpg') }}" >
+                    <img src="{{ asset('assets/img/sony/mhw-mascot.jpg') }}" >
                 </div>
                 <div class="company-mascot">
-                    <img src="{{ asset('img/sega/outrun-car.jpg') }}" >
-                </div>
-                <div class="company-mascot">
-                    <img src="{{ asset('img/sega/golden-axe-mascot.jpg') }}" >
-                </div>
-                <div class="company-mascot">
-                    <img src="{{ asset('img/sega/shinobi-3.jpg') }}" >
-                </div>
-                <div class="company-mascot">
-                    <img src="{{ asset('img/sega/jet-grind-radio.jpg') }}" >
-                </div>
-                <div class="company-mascot">
-                    <img src="{{ asset('img/sega/alex-kidd.jpg') }}" >
-                </div>
-                <div class="company-mascot">
-                    <img src="{{ asset('img/sega/sega-sports.png') }}" >
+                    <img src="{{ asset('assets/img/sony/aloy-mascot.jpg') }}" >
                 </div>
             </div>
         </div>

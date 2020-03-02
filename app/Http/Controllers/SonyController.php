@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Game;
 use App\Platform;
+use App\Company;
 use App\Region;
 use App\Logo;
 
@@ -13,6 +14,7 @@ class SonyController extends Controller
     public function index($platform, $region = null, $page = null)
     {
         $selectedPlatform = Platform::where('slug', '=', $platform)->first();
+        $company = Company::where('id', '=', $selectedPlatform->company_id)->first();
         $logoImage = Logo::where('id', '=', $selectedPlatform->logo_id)->first()->image;
         $regions = [5];
 
@@ -30,6 +32,7 @@ class SonyController extends Controller
             [
                 'games'          => $games,
                 'platform'       => $selectedPlatform,
+                'company'        => $company,
                 'logo'           => $logoImage,
                 'paginationInfo' => $paginationInfo
             ]

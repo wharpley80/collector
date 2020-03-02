@@ -20,9 +20,9 @@ class CreateGamesTable extends Migration
             $table->unsignedBigInteger('company_id');
             $table->unsignedBigInteger('platform_id');
             $table->unsignedBigInteger('region_id');
-            $table->json('genre');
+            $table->text('genre');
             $table->unsignedBigInteger('publisher_id');
-            $table->json('developer')->nullable();
+            $table->text('developer')->nullable();
             $table->text('description')->nullable();
             $table->string('cover')->nullable();
             $table->string('video')->nullable();

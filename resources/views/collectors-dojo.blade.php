@@ -14,7 +14,7 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="{{ asset('img/gow_carosel_playstation.jpg') }}" alt="First slide">
+            <img class="d-block w-100" src="{{ asset('assets/img/gow_carosel_playstation.jpg') }}" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
                 <h1>SONY</h1>
                 <p>Start Storing Your Collection Today</p>
@@ -22,7 +22,7 @@
         </div>
         <div class="carousel-item">
             <a href="{{ URL::to('') }}/sega/sega_genesis_mega_drive/north_america">
-                <img class="d-block w-100" src="{{ asset('img/sonic_carosel_sega.jpeg') }}" alt="Second slide">
+                <img class="d-block w-100" src="{{ asset('assets/img/sonic_carosel_sega.jpeg') }}" alt="Second slide">
             </a>
             <div class="carousel-caption d-none d-md-block">
                 <h1>SEGA</h1>
@@ -30,14 +30,14 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="{{ asset('img/botw_carosel_nintendo.jpg') }}" alt="Third slide">
+            <img class="d-block w-100" src="{{ asset('assets/img/botw_carosel_nintendo.jpg') }}" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
                 <h1>NINTENDO</h1>
                 <p>Start Storing Your Collection Today</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="{{ asset('img/halo_carosel_xbox.jpg') }}" alt="Fourth slide">
+            <img class="d-block w-100" src="{{ asset('assets/img/halo_carosel_xbox.jpg') }}" alt="Fourth slide">
             <div class="carousel-caption d-none d-md-block">
                 <h1>XBOX</h1>
                 <p>Start Storing Your Collection Today</p>

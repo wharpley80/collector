@@ -63,7 +63,11 @@
                         <div class="row text-center" >
                             <div class="col-md-4">
                                 <label>Purchase Price:</label>
-                                <p class="game-release">${{ $userGame->purchase_price }}</p>
+                                <p class="game-release">
+                                @if($userGame->purchase_price > 0)
+                                    {{ '$' . $userGame->purchase_price }}
+                                @endif
+                                </p>
                             </div>
                             <div class="col-md-4">
                                 <label>Purchase Date:</label>

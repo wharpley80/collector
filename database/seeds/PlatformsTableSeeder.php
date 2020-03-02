@@ -27,7 +27,7 @@ class PlatformsTableSeeder extends Seeder
                     'name' => 'Sega Genesis/Mega Drive',
                     'slug' => 'sega_genesis_mega_drive',
                     'company_id' => 1,
-                    'logo_id' => 5
+                    'logo_id' => 6
                 ],
                 [
                     'name' => 'Sega CD',

@@ -12,6 +12,7 @@ use MarcReichel\IGDBLaravel\Models\Company;
 */
 use App\Game;
 use App\Platform;
+use App\Company;
 use App\Region;
 use App\Logo;
 
@@ -22,6 +23,7 @@ class SegaController extends Controller
     {
 
         $selectedPlatform = Platform::where('slug', '=', $platform)->first();
+        $company = Company::where('id', '=', $selectedPlatform->company_id)->first();
         $logoImage = Logo::where('id', '=', $selectedPlatform->logo_id)->first()->image;
         $regions = [5];
 
@@ -75,6 +77,7 @@ var_dump($allGenesis);
             [
                 'games'          => $segaGames,
                 'platform'       => $selectedPlatform,
+                'company'        => $company,
                 'logo'           => $logoImage,
                 'paginationInfo' => $paginationInfo
             ]

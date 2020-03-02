@@ -10,9 +10,9 @@
     <title><?php echo e(config('app.name', 'Collectors Dojo')); ?></title>
 
     <!-- Scripts -->
-    <script src="<?php echo e(asset('js/app.js')); ?>" defer></script>
+    <script src="<?php echo e(asset('assets/js/app.js')); ?>" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="<?php echo e(asset('js/main.js')); ?>" type="text/javascript"></script>
+    <script src="<?php echo e(asset('assets/js/main.js')); ?>" type="text/javascript"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -20,15 +20,15 @@
     <link href="//db.onlinewebfonts.com/c/462bd259d98d98460d6767edbdcdac70?family=Foobar+Pro" rel="stylesheet" type="text/css"/>
 
     <!-- Styles -->
-    <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet" type="text/css">
-    <link href="<?php echo e(asset('css/main.css')); ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo e(asset('assets/css/app.css')); ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo e(asset('assets/css/main.css')); ?>" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
-                    <img src="<?php echo e(asset('img/collectors-dojo-logo-phos.jpg')); ?>" class="logo-header">
+                    <img src="<?php echo e(asset('assets/img/collectors-dojo-logo-phos.jpg')); ?>" class="logo-header">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<?php echo e(__('Toggle navigation')); ?>">
                     <span class="navbar-toggler-icon"></span>
@@ -37,10 +37,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <div class="navbar-links">
-                        <a href="<?php echo e(URL::to('')); ?>/sega/sega_genesis_mega_drive/north_america"><img src="<?php echo e(asset('img/sega-logo.jpg')); ?>" class="sega-logo"></a>
-                        <a href="<?php echo e(URL::to('')); ?>/nintendo/nintendo_entertainment_system/north_america"><img src="<?php echo e(asset('img/nintendo-logo.jpg')); ?>" class="nintendo-logo"></a>
-                        <a href="<?php echo e(URL::to('')); ?>/sony/playstation_4/north_america"><img src="<?php echo e(asset('img/sony-logo.jpg')); ?>" class="playstation-logo"></a>
-                        <a href="<?php echo e(URL::to('')); ?>/microsoft/original_xbox/north_america"><img src="<?php echo e(asset('img/xbox-logo.png')); ?>" class="xbox-logo"></a>
+                        <a href="<?php echo e(URL::to('')); ?>/sega/sega_genesis_mega_drive/north_america"><img src="<?php echo e(asset('assets/img/sega-logo.jpg')); ?>" class="sega-logo"></a>
+                        <a href="<?php echo e(URL::to('')); ?>/nintendo/nintendo_entertainment_system/north_america"><img src="<?php echo e(asset('assets/img/nintendo-logo.jpg')); ?>" class="nintendo-logo"></a>
+                        <a href="<?php echo e(URL::to('')); ?>/sony/playstation_4/north_america"><img src="<?php echo e(asset('assets/img/sony-logo.jpg')); ?>" class="playstation-logo"></a>
+                        <a href="<?php echo e(URL::to('')); ?>/microsoft/original_xbox/north_america"><img src="<?php echo e(asset('assets/img/xbox-logo.png')); ?>" class="xbox-logo"></a>
                     </div>
 
                     <!-- Right Side Of Navbar -->

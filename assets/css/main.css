@@ -1,0 +1,368 @@
+/************************
+    NAVBAR
+************************/
+
+.navbar-links {
+    margin: 0 auto;
+}
+
+.navbar-links img {
+    margin: 0 20px;
+    width: 100px;
+    max-height: 30px;
+}
+
+.sega-logo,
+.nintendo-logo,
+.xbox-logo {
+    height: 30px;
+}
+
+.playstation-logo {
+    height: 50px;
+}
+
+.nav-link {
+    font-family: "Foobar Pro";
+    font-weight: 600;
+    color: #000;
+}
+
+/************************
+    SEARCH BAR
+************************/
+
+.search-form-cont {
+    z-index: 10;
+    position: absolute;
+    top: 100;
+    left: 6%;
+    right: 0;
+    width: 88%;
+}
+
+/************************
+    HOME PAGE
+************************/
+
+.home-carousel-cont,
+.single-game-cont {
+    padding-top: 50px;
+}
+
+/************************
+    GENERAL
+************************/
+
+.main-content-body {
+    padding-top: 50px;
+}
+
+label {
+    font-family: "Foobar Pro";
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+hr {
+    height: 1px; 
+    background: #e2e2e2; 
+}
+
+/************************
+    IMAGES
+************************/
+
+.logo-header {
+    height: 50px;
+    width: 200px;
+}
+
+.game-cover {
+    width: 180px;
+}
+
+/************************
+    PLATFORM BUTTONS
+************************/
+
+.platform-menu a {
+    display: block;
+    width: 100%;
+    margin: 1px 0;
+    background-color: #9147ff;
+}
+
+.platform-menu a .active,
+.region-menu .active {
+    background-color: rgb(108, 117, 125);
+}
+
+.region-menu a {
+    background-color: #9147ff;
+}
+
+.platform-menu a:hover,
+.region-menu a:hover{
+    background-color: #9f65f7;
+}
+
+.left-sidebar-cont {
+    background-color: #fff;
+}
+
+.company-mascot {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.company-mascot img {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/************************
+    GAME LISTINGS
+************************/
+
+.card {
+    background-color: #E6E6FA;
+    background-color: #e2e2e2;
+    background-color: #edeaea;
+}
+
+.platform-header,
+.card-header {
+    background-color: #fff;
+    text-align: center;
+}
+
+.platform-header img {
+    height: 100%;
+    width: 100%;
+}
+
+.platform-header h1,
+.card-header h1 {
+    font-family: "Foobar Pro";
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.125);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.game-wrapper {
+    height: 330px;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.125);
+    background-color: #fff;
+}
+
+.game-cont {
+    margin: 20x;
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.view-more {
+    margin-top: 20px;
+}
+
+.game-name {
+    font-family: "Foobar Pro";
+    font-weight: 400;
+    text-align: center;
+}
+
+.game-cont-top-row {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.release-cont {
+    margin-top: 10px;
+}
+
+.game-release,
+.game-genre,
+.game-region,
+.game-rating {
+    color: #9147ff;;
+    display: inline-block;
+}
+
+.view-more,
+.add-game-submit {
+    background-color: #9147ff;
+}
+
+.view-more:hover,
+.add-game-submit:hover {
+    background-color: #9f65f7;
+}
+
+.game-cont-bottom {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.game-summary {
+    height: 100px;
+}
+
+@media (max-width: 770px) {
+
+    .platform-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .game-wrapper {
+        text-align: center;
+        height: 100%;
+    }
+
+    .game-name {
+        font-size: 1.25rem;
+        margin-top: 10px;
+    }
+
+    .game-cont-bottom {
+        margin: 10px auto;
+    }
+}
+
+/************************
+    PAGINATION
+************************/
+
+nav {
+    text-align: center;
+}
+.pagination {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.pagination-info {
+    text-align: right;
+    font-family: "Foobar Pro";
+    font-weight: 400;
+    color: #000;
+}
+
+/************************
+    SINGLE GAME
+************************/
+
+.single-game-title {
+    background-color: #fff;
+    text-align: center;
+}
+
+.single-game-title h1 {
+    font-family: "Foobar Pro";
+    font-weight: 500;
+}
+
+.single-game-body {
+    background-color: #f2efef;
+}
+
+.single-game-cover {
+    max-height: 400px;
+    width: 100%;
+}
+
+.single-game-detail-cont label {
+    font-family: "Foobar Pro";
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.single-game-description {
+    margin: 20px 0 30px 0;
+    font-size: 1rem;
+}
+
+a:not([href]) {
+    color: #fff;
+}
+
+a:not([href]):hover {
+    color: #fff;
+}
+
+@media (max-width: 770px) {
+    .single-game-title h1 {
+        font-size: 1.25rem;
+    }
+
+    .single-game-body {
+        text-align: center;
+    }
+
+    .single-game-cover {
+        width: 80%;
+        height: 100%;
+    }
+
+    .single-game-detail-cont {
+        margin-top: 30px;
+    }
+
+    .single-game-description {
+        text-align: left;
+        margin: 10px 0 20px 0;
+    }
+
+    .single-game-detail-cont .view-more {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+
+/************************
+    MY COLLECTION
+************************/
+
+.my-collection-cont {
+    padding-top: 50px;
+}
+
+.empty-collection {
+    width: 100%;
+    text-align: center;
+}
+
+.collection-cover-cont {
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.collection-game-cover {
+    width: 100%;
+}
+
+/************************
+    COLLECTION SINGLE
+************************/
+
+.my-game-details-cont {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.my-game-details-cont h2 {
+    font-family: "Foobar Pro";
+    font-weight: 500;
+}

@@ -120,6 +120,18 @@ class PublishersTableSeeder extends Seeder
             [
                 'name' => 'Electronic Arts',
                 'slug' => 'electronic_arts'
+            ],
+            [
+                'name' => 'Nintendo',
+                'slug' => 'nintendo'
+            ],
+            [
+                'name' => 'THQ',
+                'slug' => 'thq'
+            ],
+            [
+                'name' => 'THQ Nordic',
+                'slug' => 'thq_nordic'
             ]
         ]);
 

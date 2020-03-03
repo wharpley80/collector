@@ -12,6 +12,7 @@ class GenresTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         //DB::table('genres')->truncate();
 
         Genre::insert(
@@ -393,7 +394,26 @@ class GenresTableSeeder extends Seeder
                 'slug' => 'compilation',
                 'parent_genre' => 'Other',
                 'parent_genre_slug' => 'other'
+            ],
+            [
+                'name' => 'Metroidvania',
+                'slug' => 'metroidvania',
+                'parent_genre' => 'Adventure',
+                'parent_genre_slug' => 'adventure'
+            ],
+            [
+                'name' => 'Hack and Slash',
+                'slug' => 'hack_and_slash',
+                'parent_genre' => 'Action',
+                'parent_genre_slug' => 'action'
+            ],
+            [
+                'name' => 'Arena Fighting',
+                'slug' => 'arena_fighting',
+                'parent_genre' => 'Action',
+                'parent_genre_slug' => 'action'
             ]
         ]);
+
     }
 }

@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Collectors Dojo') }}</title>
+    <title>Collector's Dojo - This is an app where you can research you favorite video games, and then build out your own detailed collection.</title>
 
     <!-- Scripts -->
     <script src="{{ asset('assets/js/app.js') }}" defer></script>

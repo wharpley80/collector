@@ -1,16 +1,15 @@
 @extends('layouts.app')
 
-@extends('layouts.search')
-
 @section('content')
 
 <div class="container">
+    @extends('layouts.search')
     <h1 class="company-name" hidden>nintendo</h1>
     <div class="row main-content-body">
         <div class="col-md-4">
             <div class="platform-menu" role="group" aria-label="Basic example">
                 <a type="button" class="platform-nintendo_entertainment_system btn btn-secondary active" href="{{ URL::to('') }}/nintendo/nintendo_entertainment_system/north_america">Nintendo Entertainment System</a>
-                <a type="button" class="platform-super_nintendo_entertainment_system btn btn-secondary" href="{{ URL::to('') }}/nintendo/super_nintendo_entertainment_system/north_america">Super Nintnedo Entertainment System</a>
+                <a type="button" class="platform-super_nintendo_entertainment_system btn btn-secondary" href="{{ URL::to('') }}/nintendo/super_nintendo_entertainment_system/north_america">Super Nintendo Entertainment System</a>
                 <a type="button" class="platform-nintendo_64 btn btn-secondary" href="{{ URL::to('') }}/nintendo/nintendo_64/north_america">Nintendo 64</a>
                 <a type="button" class="platform-nintendo_gamecube btn btn-secondary" href="{{ URL::to('') }}/nintendo/nintendo_gamecube/north_america">Nintendo GameCube</a>
                 <a type="button" class="platform-nintendo_wii btn btn-secondary" href="{{ URL::to('') }}/nintendo/nintendo_wii/north_america">Nintendo Wii</a>

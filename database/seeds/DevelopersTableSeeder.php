@@ -156,6 +156,18 @@ class DevelopersTableSeeder extends Seeder
                 [
                     'name' => 'Studio 128',
                     'slug' => 'studio_128'
+                ],
+                [
+                    'name' => 'Nintendo',
+                    'slug' => 'nintendo'
+                ],
+                [
+                    'name' => 'Vigil Games',
+                    'slug' => 'vigil_games'
+                ],
+                [
+                    'name' => 'Kaiko',
+                    'slug' => 'kaiko'
                 ]
             ]
         );

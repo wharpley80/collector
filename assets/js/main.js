@@ -5,6 +5,12 @@ $(document).ready(function() {
     var companyName  = $('.company-name').text();
     var platformSlug = pageUrl.split(companyName + '/').pop().split('/')[0];
 
+    activateToolTips = function() {
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    }
+
     ajaxConfig = function() {
         $.ajaxSetup({
             headers: {
@@ -166,6 +172,7 @@ $(document).ready(function() {
         });
     }
 
+    activateToolTips();
     setActivePlatform();
     setActiveRegion();
     clearSearchResults();

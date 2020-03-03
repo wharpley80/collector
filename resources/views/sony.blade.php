@@ -1,10 +1,9 @@
 @extends('layouts.app')
 
-@extends('layouts.search')
-
 @section('content')
 
 <div class="container">
+    @extends('layouts.search')
     <h1 class="company-name" hidden>sony</h1>
     <div class="row main-content-body">
         <div class="col-md-4">

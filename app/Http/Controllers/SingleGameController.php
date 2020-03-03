@@ -43,13 +43,14 @@ class SingleGameController extends Controller
         $result['message'] = 'Must be signed into your account to add games to your collection.';
 
         if ($user) {
+            $gameData['userId'] = $user->id;
             $result['status'] = 'fail';
             $result['message'] = 'Problem saving game data';
 
             if ($gameData) {
                 UserGame::insert(
                     [
-                        'user_id' => $user->id, 
+                        'user_id' => $gameData['userId'], 
                         'company_id' => $gameData['companyId'], 
                         'game_id' => intval($gameData['gameId']), 
                         'purchase_date' => $gameData['date'], 

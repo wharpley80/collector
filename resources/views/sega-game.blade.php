@@ -1,10 +1,9 @@
 @extends('layouts.app')
 
-@extends('layouts.search')
-
 @section('content')
 
 <div class="container">
+    @extends('layouts.search')
     <h1 class="company-name" hidden>sega</h1>
     <div class="row main-content-body">
         <div class="col-md-4">
@@ -30,6 +29,7 @@
                 <div class="company-mascot">
                     <img src="{{ asset('assets/img/sega/falcon-powerstone.jpg') }}" >
                 </div>
+                <!--
                 <div class="company-mascot">
                     <img src="{{ asset('assets/img/sega/outrun-car.jpg') }}" >
                 </div>
@@ -48,6 +48,7 @@
                 <div class="company-mascot">
                     <img src="{{ asset('assets/img/sega/sega-sports.png') }}" >
                 </div>
+                -->
             </div>
         </div>
         @include('layouts.game-list')

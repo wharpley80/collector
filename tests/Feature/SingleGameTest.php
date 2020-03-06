@@ -18,11 +18,11 @@ class SingleGameTest extends TestCase
      */
     public function testUsersCanAddGameToTheirCollection()
     {
-        $this->withoutExceptionHandling();
         $this->actingAs(factory(User::class)->create());
+        $user = factory(User::class)->make();
         
         $gameData = [];
-        $gameData['userId'] = 1;
+        $gameData['userId'] = $user->id;
         $gameData['companyId'] = 1;
         $gameData['gameId'] = 1;
         $gameData['date'] = '2/20/20';

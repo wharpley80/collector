@@ -168,6 +168,26 @@ class DevelopersTableSeeder extends Seeder
                 [
                     'name' => 'Kaiko',
                     'slug' => 'kaiko'
+                ],
+                [
+                    'name' => 'Vanillaware',
+                    'slug' => 'vanillaware'
+                ],
+                [
+                    'name' => 'Grezzo',
+                    'slug' => 'grezzo'
+                ],
+                [
+                    'name' => 'Sculptured Software',
+                    'slug' => 'sculptured_software'
+                ],
+                [
+                    'name' => 'Wayfoward',
+                    'slug' => 'wayfoward'
+                ],
+                [
+                    'name' => 'Polygon Magic',
+                    'slug' => 'polygon_magic'
                 ]
             ]
         );

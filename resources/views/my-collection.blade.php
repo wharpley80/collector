@@ -8,8 +8,19 @@
     <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">
-                        <h1>My Collection</h1>
+                    <div class="card-header my-collection-header">
+                        <h1 class="my-collection-title">My
+                        @if (!empty($selectedPlatform))
+                            {{ $selectedPlatform->name }}
+                        @endif
+                         Collection</h1>
+                        <select class="selectpicker my-platform-sort float-right" onChange="window.location.href=this.value">
+                            <option>Select Platform</option>
+                            <option value="{{ URL::to('') }}/my-collection">All Platforms</option>
+                            @foreach($platforms as $platform)
+                                <option value="{{ URL::to('') }}/my-collection/{{ $platform->slug }}">{{ $platform->name }}</option>
+                            @endforeach
+                        </select>
                     </div>
                     <div class="card-body">
                         <div class="row">

@@ -132,7 +132,28 @@ class PublishersTableSeeder extends Seeder
             [
                 'name' => 'THQ Nordic',
                 'slug' => 'thq_nordic'
+            ],
+            [
+                'name' => 'Ignition Entertainment',
+                'slug' => 'ignition_entertainment'
+            ],
+            [
+                'name' => 'Marvelous Entertainment',
+                'slug' => 'marvelous_entertainment'
+            ],
+            [
+                'name' => 'Rising Star Games',
+                'slug' => 'rising_star_games'
+            ],
+            [
+                'name' => 'Aksys Games',
+                'slug' => 'aksys_games'
+            ],
+            [
+                'name' => 'Marvelous AQL',
+                'slug' => 'marvelous_aql'
             ]
+
         ]);
 
     }

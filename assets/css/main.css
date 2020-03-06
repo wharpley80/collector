@@ -347,6 +347,23 @@ a:not([href]):hover {
     padding-top: 50px;
 }
 
+.my-collection-header {
+    text-align: left;
+}
+
+.my-collection-title {
+    display: inline-block;
+}
+
+.my-platform-sort {
+    margin-top: 20px;
+    height: 40px;
+}
+
+select, select:active, select:hover {
+    outline-color: #9147ff;
+  }
+
 .empty-collection {
     width: 100%;
     text-align: center;
@@ -359,7 +376,9 @@ a:not([href]):hover {
 }
 
 .collection-game-cover {
-    width: 100%;
+    width: auto;
+    max-height: 250px;
+    max-width: 100%;
 }
 
 /************************

@@ -188,6 +188,50 @@ class DevelopersTableSeeder extends Seeder
                 [
                     'name' => 'Polygon Magic',
                     'slug' => 'polygon_magic'
+                ],
+                [
+                    'name' => 'T&E Soft',
+                    'slug' => 't&e_soft'
+                ],
+                [
+                    'name' => 'LucasArts',
+                    'slug' => 'lucasarts'
+                ],
+                [
+                    'name' => 'Big Ape Production',
+                    'slug' => 'big_ape_production'
+                ],
+                [
+                    'name' => 'Crystal Dynamics',
+                    'slug' => 'crystal_dynamics'
+                ],
+                [
+                    'name' => 'Lemon',
+                    'slug' => 'lemon'
+                ],
+                [
+                    'name' => 'Sunsoft',
+                    'slug' => 'sunsoft'
+                ],
+                [
+                    'name' => 'Probe Entertainment',
+                    'slug' => 'probe_entertainment'
+                ],
+                [
+                    'name' => 'Iguana Entertainment',
+                    'slug' => 'iguana_entertainment'
+                ],
+                [
+                    'name' => 'Infogrames',
+                    'slug' => 'infogrames'
+                ],
+                [
+                    'name' => 'Mesa Logic',
+                    'slug' => 'mesa_logic'
+                ],
+                [
+                    'name' => 'Jaleco',
+                    'slug' => 'jaleco'
                 ]
             ]
         );

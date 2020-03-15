@@ -25,13 +25,18 @@
             </a>
         </div>    
         <div class="card-body">
+<select class="form-control" id="game-sort" onChange="window.location.href=this.value">
+    <option>Sort</option>
+    <option value="{{ URL::to('') }}/{{ $company->slug }}/{{ $platform->slug }}/{{ $region->slug }}/name-asc">A - Z</option>
+    <option value="{{ URL::to('') }}/{{ $company->slug }}/{{ $platform->slug }}/{{ $region->slug }}/name-desc">Z - A</option>
+</select>
             <p class="pagination-info">{{ $paginationInfo }}</p>
             @foreach ($games as $game)
                 <div class="game-wrapper">
                     <div class="container game-cont">
                         <div class="row" id="{{ $game->id }}">
                             <div class="col-sm-12 col-md-4 ">
-                                <a href="{{ URL::to('') }}/single-game/{{ $platform->slug }}/{{ $game->id }}">
+                                <a href="{{ URL::to('') }}/single-game/{{ $game->id }}">
                                     <img src="{{ $game->cover }}" class="game-cover">
                                 </a>
                             </div>
@@ -43,7 +48,7 @@
                                     <p class="game-release">{{ $game->release_date }}</p>
                                     </div>
                                     <div class="col-md-6">
-                                        <a type="button" class="view-more btn btn-secondary" href="{{ URL::to('') }}/single-game/{{ $platform->slug }}/{{ $game->id }}">View More</a>
+                                        <a type="button" class="view-more btn btn-secondary" href="{{ URL::to('') }}/single-game/{{ $game->id }}">View More</a>
                                     </div>
                                 </div>
                                 <div class="row game-cont-bottom">

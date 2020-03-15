@@ -10,23 +10,26 @@ use Auth;
 
 class SingleGameController extends Controller
 {
-    public function index($platform, $gameId)
+    public function index($gameId)
     {
-        $selectedPlatform = Platform::where('slug', '=', $platform)->first();
         $game = Game::where('id', '=', $gameId)->first();
 
-        $genres = $game->getGameGenres();
-        $publisherName = $game->getPublisherName();
-        $developers = $game->getGameDevelopers();
+        if ($game) {
+            $genres = $game->getGameGenres() ?? '';
+            $publisherName = $game->getPublisherName() ?? '';
+            $developers = $game->getGameDevelopers() ?? '';
 
-        return view('single-game')->with(
-            [
-                'game' => $game,
-                'genres' => $genres,
-                'publisherName' => $publisherName,
-                'developers' => $developers
-            ]
-        );
+            return view('single-game')->with(
+                [
+                    'game' => $game,
+                    'genres' => $genres,
+                    'publisherName' => $publisherName,
+                    'developers' => $developers
+                ]
+            );
+        }
+
+        return view('collectors-dojo'); 
     }
 
     /**

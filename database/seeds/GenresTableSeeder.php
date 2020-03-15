@@ -412,6 +412,18 @@ class GenresTableSeeder extends Seeder
                 'slug' => 'arena_fighting',
                 'parent_genre' => 'Action',
                 'parent_genre_slug' => 'action'
+            ],
+            [
+                'name' => 'Light Gun Shooter',
+                'slug' => 'light_gun_shooter',
+                'parent_genre' => 'Action',
+                'parent_genre_slug' => 'action'
+            ],
+            [
+                'name' => 'Puzzle',
+                'slug' => 'puzzle',
+                'parent_genre' => 'Other',
+                'parent_genre_slug' => 'other'
             ]
         ]);
 

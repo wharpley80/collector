@@ -19,15 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/sega/{platform}/{region?}', 'SegaController@index')->name('sega');
+Route::get('/{company}/{platform}/{region}/{sort?}', 'GameListController@index')->name('game-list');
 
-Route::get('/nintendo/{platform}/{region?}', 'NintendoController@index')->name('nintendo');
-
-Route::get('/sony/{platform}/{region?}', 'SonyController@index')->name('sony');
-
-Route::get('/microsoft/{platform}/{region?}', 'MicrosoftController@index')->name('microsoft');
-
-Route::get('/single-game/{platform}/{gameId}', 'SingleGameController@index')->name('single-game');
+Route::get('/single-game/{gameId}', 'SingleGameController@index');
 
 Route::post('/single-game', 'SingleGameController@addUserGame');
 

@@ -152,6 +152,50 @@ class PublishersTableSeeder extends Seeder
             [
                 'name' => 'Marvelous AQL',
                 'slug' => 'marvelous_aql'
+            ],
+            [
+                'name' => 'T&E Soft',
+                'slug' => 't&e_soft'
+            ],
+            [
+                'name' => 'LucasArts',
+                'slug' => 'lucasarts'
+            ],
+            [
+                'name' => 'Crystal Dynamics',
+                'slug' => 'crystal_dynamics'
+            ],
+            [
+                'name' => 'BMG Japan',
+                'slug' => 'bmg_japan'
+            ],
+            [
+                'name' => 'Scavenger',
+                'slug' => 'scavenger'
+            ],
+            [
+                'name' => 'Koei',
+                'slug' => 'koei'
+            ],
+            [
+                'name' => 'ESP',
+                'slug' => 'esp'
+            ],
+            [
+                'name' => 'Sunsoft',
+                'slug' => 'sunsoft'
+            ],
+            [
+                'name' => 'Infogrames',
+                'slug' => 'infogrames'
+            ],
+            [
+                'name' => 'Atari Games',
+                'slug' => 'atari_games'
+            ],
+            [
+                'name' => 'Jaleco',
+                'slug' => 'jaleco'
             ]
 
         ]);

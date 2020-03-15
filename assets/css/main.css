@@ -89,6 +89,8 @@ hr {
 
 .game-cover {
     width: 180px;
+    height: auto;
+    max-height: 270px;
 }
 
 /************************
@@ -157,6 +159,12 @@ hr {
     font-family: "Foobar Pro";
     font-weight: 500;
     margin-top: 15px;
+}
+
+#game-sort {
+    display: inline-block;
+    width: 100px;
+    margin-left: 10px;
 }
 
 .card-body {
@@ -262,6 +270,8 @@ nav {
 }
 
 .pagination-info {
+    display: inline-block;
+    float: right;
     text-align: right;
     font-family: "Foobar Pro";
     font-weight: 400;

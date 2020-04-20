@@ -110,8 +110,8 @@ class DevelopersTableSeeder extends Seeder
                     'slug' => 'scarab'
                 ],
                 [
-                    'name' => 'Jumpin Jack',
-                    'slug' => 'jumpin_jack'
+                    'name' => 'Jumpin Jack Software',
+                    'slug' => 'jumpin_jack_software'
                 ],
                 [
                     'name' => 'Digital Factory',
@@ -232,6 +232,242 @@ class DevelopersTableSeeder extends Seeder
                 [
                     'name' => 'Jaleco',
                     'slug' => 'jaleco'
+                ],
+                [
+                    'name' => 'Smilebit',
+                    'slug' => 'smilebit'
+                ],
+                [
+                    'name' => 'Vicarious Visions',
+                    'slug' => 'vicarious_visions'
+                ],
+                [
+                    'name' => 'Team Ninja',
+                    'slug' => 'team_ninja'
+                ],
+                [
+                    'name' => 'Cyclone Studios',
+                    'slug' => 'cyclone_studios'
+                ],
+                [
+                    'name' => 'Sega Away Team',
+                    'slug' => 'sega_away_team'
+                ],
+                [
+                    'name' => 'The Illusions Gaming Company',
+                    'slug' => 'the_illusions_gaming_company'
+                ],
+                [
+                    'name' => 'ReadySoft',
+                    'slug' => 'readysoft'
+                ],
+                [
+                    'name' => 'Ocean Software',
+                    'slug' => 'ocean_software'
+                ],
+                [
+                    'name' => 'Taito',
+                    'slug' => 'taito'
+                ],
+                [
+                    'name' => 'Funcom',
+                    'slug' => 'funcom'
+                ],
+                [
+                    'name' => 'Imagineering',
+                    'slug' => 'imagineering'
+                ],
+                [
+                    'name' => 'Planet Interactive',
+                    'slug' => 'planet_interactive'
+                ],
+                [
+                    'name' => 'G3 Interactive',
+                    'slug' => 'g3_interactive'
+                ],
+                [
+                    'name' => 'Bonsai Entertainment',
+                    'slug' => 'bonsai_entertainment'
+                ],
+                [
+                    'name' => 'Westwood Studios',
+                    'slug' => 'westwood_studios'
+                ],
+                [
+                    'name' => 'Digital Pictures',
+                    'slug' => 'digital_pictures'
+                ],
+                [
+                    'name' => 'New Level Software',
+                    'slug' => 'new_level_software'
+                ],
+                [
+                    'name' => 'Interactive Studios',
+                    'slug' => 'interactive_studios'
+                ],
+                [
+                    'name' => 'Argonaut Software',
+                    'slug' => 'argonaut_software'
+                ],
+                [
+                    'name' => 'Eidos Interactive',
+                    'slug' => 'eidos_interactive'
+                ],
+                [
+                    'name' => 'Kronos Digital Entertainment',
+                    'slug' => 'kronos_digital_entertainment'
+                ],
+                [
+                    'name' => 'Virtucraft',
+                    'slug' => 'virtucraft'
+                ],
+                [
+                    'name' => 'Sega AM3',
+                    'slug' => 'sega_am3'
+                ],
+                [
+                    'name' => 'Xatrix Entertainment',
+                    'slug' => 'xatrix_entertainment'
+                ],
+                [
+                    'name' => 'Warp',
+                    'slug' => 'warp'
+                ],
+                [
+                    'name' => 'Climax Entertainment',
+                    'slug' => 'climax_entertainment'
+                ],
+                [
+                    'name' => 'Rage Software',
+                    'slug' => 'rage_software'
+                ],
+                [
+                    'name' => 'Amusement Vision',
+                    'slug' => 'amusement_vision'
+                ],
+                [
+                    'name' => 'Millennium Interactive',
+                    'slug' => 'millennium_interactive'
+                ],
+                [
+                    'name' => 'Sega AM1',
+                    'slug' => 'sega_am1'
+                ],
+                [
+                    'name' => 'N-Space',
+                    'slug' => 'n_space'
+                ],
+                [
+                    'name' => 'Rage Software',
+                    'slug' => 'rage_software'
+                ],
+                [
+                    'name' => 'Midway Studios',
+                    'slug' => 'midway_studios'
+                ],
+                [
+                    'name' => 'id Software',
+                    'slug' => 'id_software'
+                ],
+                [
+                    'name' => 'Midway Games',
+                    'slug' => 'midway_games'
+                ],
+                [
+                    'name' => 'Screaming Villans',
+                    'slug' => 'screaming_villans'
+                ],
+                [
+                    'name' => 'Torus Games',
+                    'slug' => 'torus_games'
+                ],
+                [
+                    'name' => 'Lobotomy Software',
+                    'slug' => 'lobotomy_software'
+                ],
+                [
+                    'name' => 'Eurocom',
+                    'slug' => 'eurocom'
+                ],
+                [
+                    'name' => 'Aardvark Software',
+                    'slug' => 'aardvark_software'
+                ],
+                [
+                    'name' => 'Gearbox Software',
+                    'slug' => 'gearbox_software'
+                ],
+                [
+                    'name' => 'Apogee Software',
+                    'slug' => 'apogee_software'
+                ],
+                [
+                    'name' => 'Shiny Entertainment',
+                    'slug' => 'shiny_entertainment'
+                ],
+                [
+                    'name' => 'Screaming Pink',
+                    'slug' => 'screaming_pink'
+                ],
+                [
+                    'name' => 'Super Empire',
+                    'slug' => 'super_empire'
+                ],
+                [
+                    'name' => 'David A. Palmer Productions',
+                    'slug' => 'david_a_palmer_productions'
+                ],
+                [
+                    'name' => 'Game Titan',
+                    'slug' => 'game_titan'
+                ],
+                [
+                    'name' => 'VIS Interactive',
+                    'slug' => 'vis_interactive'
+                ],
+                [
+                    'name' => 'Sega CS',
+                    'slug' => 'sega_cs'
+                ],
+                [
+                    'name' => 'Extended Play Productions',
+                    'slug' => 'extended_play_productions'
+                ],
+                [
+                    'name' => 'XYZ Productions',
+                    'slug' => 'xyz_productions'
+                ],
+                [
+                    'name' => 'Tiertex Design Studios',
+                    'slug' => 'tiertex_design_studios'
+                ],
+                [
+                    'name' => 'Perfect Entertainment',
+                    'slug' => 'perfect_entertainment'
+                ],
+                [
+                    'name' => 'Ving',
+                    'slug' => 'ving'
+                ],
+                [
+                    'name' => 'TOSE',
+                    'slug' => 'tose'
+                ],
+                [
+                    'name' => 'Santaclaus',
+                    'slug' => 'santaclaus'
+                ],
+                [
+                    'name' => 'Burst Studios',
+                    'slug' => 'burst_studios'
+                ],
+                [
+                    'name' => 'Radical Entertainment',
+                    'slug' => 'radical_entertainment'
+                ],
+                [
+                    'name' => 'Game Arts',
+                    'slug' => 'game_arts'
                 ]
             ]
         );

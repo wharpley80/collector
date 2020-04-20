@@ -424,7 +424,127 @@ class GenresTableSeeder extends Seeder
                 'slug' => 'puzzle',
                 'parent_genre' => 'Other',
                 'parent_genre_slug' => 'other'
-            ]
+            ],
+            [
+                'name' => 'Simulation',
+                'slug' => 'simulation',
+                'parent_genre' => 'Simulation',
+                'parent_genre_slug' => 'simulation'
+            ],
+            [
+                'name' => 'Combat Flight Simulator',
+                'slug' => 'combat_flight_simulator',
+                'parent_genre' => 'Simulation',
+                'parent_genre_slug' => 'simulation'
+            ],
+            [
+                'name' => 'Point-and-Click Adventure',
+                'slug' => 'point_and_click_adventure',
+                'parent_genre' => 'Adventure',
+                'parent_genre_slug' => 'adventure'
+            ],
+            [
+                'name' => 'Adventure',
+                'slug' => 'adventure',
+                'parent_genre' => 'Adventure',
+                'parent_genre_slug' => 'adventure'
+            ],
+            [
+                'name' => 'Rail Shooter',
+                'slug' => 'rail_shooter',
+                'parent_genre' => 'Action',
+                'parent_genre_slug' => 'action'
+            ],
+            [
+                'name' => 'Car Combat',
+                'slug' => 'car_combat',
+                'parent_genre' => 'Action',
+                'parent_genre_slug' => 'action'
+            ],
+            [
+                'name' => 'Bullet Hell Shooter',
+                'slug' => 'bullet_hell_shooter',
+                'parent_genre' => 'Shoot \'em up',
+                'parent_genre_slug' => 'shoot_em_up'
+            ],
+            [
+                'name' => 'Vertical Scrolling Shooter',
+                'slug' => 'vertical_scrolling_shooter',
+                'parent_genre' => 'Shoot \'em up',
+                'parent_genre_slug' => 'shoot_em_up'
+            ],
+            [
+                'name' => 'Horizontal Scrolling Shooter',
+                'slug' => 'horizontal_scrolling_shooter',
+                'parent_genre' => 'Shoot \'em up',
+                'parent_genre_slug' => 'shoot_em_up'
+            ],
+            [
+                'name' => 'Shoot \'em up',
+                'slug' => 'shoot_em_up',
+                'parent_genre' => 'Shoot \'em up',
+                'parent_genre_slug' => 'shoot_em_up'
+            ],
+            [
+                'name' => 'Twin Stick Shooter',
+                'slug' => 'twin_stick_shooter',
+                'parent_genre' => 'Action',
+                'parent_genre_slug' => 'action'
+            ],
+            [
+                'name' => 'Puzzle Adventure',
+                'slug' => 'puzzle_adventure',
+                'parent_genre' => 'Adventure',
+                'parent_genre_slug' => 'adventure'
+            ],
+            [
+                'name' => 'Space Combat Simulator',
+                'slug' => 'space_combat_simulator',
+                'parent_genre' => 'Simulation',
+                'parent_genre_slug' => 'simulation'
+            ],
+            [
+                'name' => 'Soccer Game',
+                'slug' => 'soccer_game',
+                'parent_genre' => 'Sports',
+                'parent_genre_slug' => 'sports'
+            ],
+            [
+                'name' => 'Baseball Game',
+                'slug' => 'baseball_game',
+                'parent_genre' => 'Sports',
+                'parent_genre_slug' => 'sports'
+            ],
+            [
+                'name' => 'Basketball Game',
+                'slug' => 'basketball_game',
+                'parent_genre' => 'Sports',
+                'parent_genre_slug' => 'sports'
+            ],
+            [
+                'name' => 'Football Game',
+                'slug' => 'football_game',
+                'parent_genre' => 'Sports',
+                'parent_genre_slug' => 'sports'
+            ],
+            [
+                'name' => 'Golf Game',
+                'slug' => 'golf_game',
+                'parent_genre' => 'Sports',
+                'parent_genre_slug' => 'sports'
+            ],
+            [
+                'name' => 'Hockey Game',
+                'slug' => 'hockey_game',
+                'parent_genre' => 'Sports',
+                'parent_genre_slug' => 'sports'
+            ],
+            [
+                'name' => 'Tennis Game',
+                'slug' => 'tennis_game',
+                'parent_genre' => 'Sports',
+                'parent_genre_slug' => 'sports'
+            ],
         ]);
 
     }

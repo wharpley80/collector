@@ -19,11 +19,13 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/{company}/{platform}/{region}/{sort?}', 'GameListController@index')->name('game-list');
+Route::get('games/{company}/{platform}/{region}/{sort?}', 'GameListController@index')->name('games');
 
-Route::get('/single-game/{gameId}', 'SingleGameController@index');
+Route::get('/single-game/{gameId}', 'SingleGameController@index')->name('single-game');
 
 Route::post('/single-game', 'SingleGameController@addUserGame');
+
+Route::get('publisher/{name}/{region}/{sort?}', 'PublisherListController@index')->name('publishers');
 
 Route::post('/search', 'SearchController@search');
 

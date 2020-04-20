@@ -19,17 +19,19 @@ class GameListController extends Controller
         $selectedRegion   = $this->getRegionBySlug($region);
         $sortParams       = $this->getSortParams($sort);
         $regions          = $this->getRegions($selectedRegion);
+        $companyPlatforms = $companyObj->getPlatformsByCompany();
         $games            = $this->getGameList($selectedPlatform, $regions, $sortParams);
         $paginationInfo   = $this->getPaginationInfo($games);
 
         return view($company)->with(
             [
-                'games'          => $games,
-                'platform'       => $selectedPlatform,
-                'region'         => $selectedRegion,
-                'company'        => $companyObj,
-                'logo'           => $logoImage,
-                'paginationInfo' => $paginationInfo
+                'games'            => $games,
+                'platform'         => $selectedPlatform,
+                'companyPlatforms' => $companyPlatforms,
+                'region'           => $selectedRegion,
+                'company'          => $companyObj,
+                'logo'             => $logoImage,
+                'paginationInfo'   => $paginationInfo
             ]
         );
     }
@@ -125,7 +127,7 @@ class GameListController extends Controller
         $games = Game::where('platform_id', '=', $platform->id)
             ->whereIn('region_id', $regions)
             ->orderBy($sort[0], $sort[1])
-            ->paginate(5);
+            ->paginate(10);
 
         return $games;
     }

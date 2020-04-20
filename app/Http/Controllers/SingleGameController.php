@@ -16,14 +16,15 @@ class SingleGameController extends Controller
 
         if ($game) {
             $genres = $game->getGameGenres() ?? '';
-            $publisherName = $game->getPublisherName() ?? '';
+            //$publisherName = $game->getPublisherName() ?? '';
+            $publisher = $game->getPublisher();
             $developers = $game->getGameDevelopers() ?? '';
 
             return view('single-game')->with(
                 [
                     'game' => $game,
                     'genres' => $genres,
-                    'publisherName' => $publisherName,
+                    'publisher' => $publisher,
                     'developers' => $developers
                 ]
             );

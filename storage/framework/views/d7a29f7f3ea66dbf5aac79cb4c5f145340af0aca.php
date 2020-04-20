@@ -37,10 +37,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <div class="navbar-links">
-                        <a href="<?php echo e(URL::to('')); ?>/sega/sega_genesis_mega_drive/north_america"><img src="<?php echo e(asset('assets/img/sega-logo.jpg')); ?>" class="sega-logo"></a>
-                        <a href="<?php echo e(URL::to('')); ?>/nintendo/nintendo_entertainment_system/north_america"><img src="<?php echo e(asset('assets/img/nintendo-logo.jpg')); ?>" class="nintendo-logo"></a>
-                        <a href="<?php echo e(URL::to('')); ?>/sony/playstation_4/north_america"><img src="<?php echo e(asset('assets/img/sony-logo.jpg')); ?>" class="playstation-logo"></a>
-                        <a href="<?php echo e(URL::to('')); ?>/microsoft/original_xbox/north_america"><img src="<?php echo e(asset('assets/img/xbox-logo.png')); ?>" class="xbox-logo"></a>
+                        <a href="<?php echo e(route('games', ['sega', 'sega_saturn', 'north_america'])); ?>"><img src="<?php echo e(asset('assets/img/sega-logo.jpg')); ?>" class="sega-logo"></a>
+                        <a href="<?php echo e(route('games', ['nintendo', 'nintendo_entertainment_system', 'north_america'])); ?>"><img src="<?php echo e(asset('assets/img/nintendo-logo.jpg')); ?>" class="nintendo-logo"></a>
+                        <a href="<?php echo e(route('games', ['sony', 'playstation', 'north_america'])); ?>"><img src="<?php echo e(asset('assets/img/sony-logo.jpg')); ?>" class="playstation-logo"></a>
+                        <a href="<?php echo e(route('games', ['microsoft', 'original_xbox', 'north_america'])); ?>"><img src="<?php echo e(asset('assets/img/xbox-logo.png')); ?>" class="xbox-logo"></a>
                     </div>
 
                     <!-- Right Side Of Navbar -->

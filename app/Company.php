@@ -12,4 +12,14 @@ class Company extends Model
      * @var string
      */
     protected $table = 'company';
+
+    /**
+     * Returns all the platforms produced by this company.
+     * 
+     * @return Object
+     */
+    public function getPlatformsByCompany()
+    {
+        return Platform::where('company_id', '=', $this->id)->get() ?? '';
+    }
 }

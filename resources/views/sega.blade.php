@@ -7,15 +7,7 @@
     <h1 class="company-name" hidden>sega</h1>
     <div class="row main-content-body">
         <div class="col-md-4">
-            <div class="platform-menu" role="group" aria-label="Basic example">
-                <a type="button" class="platform-sega_master_system btn btn-secondary active" href="{{ URL::to('') }}/sega/sega_master_system/north_america">Sega Master System</a>
-                <a type="button" class="platform-sega_genesis_mega_drive btn btn-secondary" href="{{ URL::to('') }}/sega/sega_genesis_mega_drive/north_america">Sega Mega Drive/Genesis</a>
-                <a type="button" class="platform-sega_cd btn btn-secondary" href="{{ URL::to('') }}/sega/sega_cd/north_america">Sega CD</a>
-                <a type="button" class="platform-sega_32x btn btn-secondary" href="{{ URL::to('') }}/sega/sega_32x/north_america">Sega 32X</a>
-                <a type="button" class="platform-sega_saturn btn btn-secondary" href="{{ URL::to('') }}/sega/sega_saturn/north_america">Sega Saturn</a>
-                <a type="button" class="platform-sega_dreamcast btn btn-secondary" href="{{ URL::to('') }}/sega/sega_dreamcast/north_america">Sega Dreamcast</a>
-                <a type="button" class="platform-sega_game_gear btn btn-secondary" href="{{ URL::to('') }}/sega/sega_game_gear/north_america">Sega Game Gear</a>
-            </div>
+            @include('layouts.platform-menu')
             <div class="left-sidebar-cont d-none d-md-block">
                 <div class="company-mascot">
                     <img src="{{ asset('assets/img/sega/sonic-finger-wag.jpg') }}" >

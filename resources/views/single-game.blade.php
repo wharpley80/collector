@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label>Publisher:</label>
-                                    <p class="game-release">{{ $publisherName }}</p>
+                                    <a href="{{ route('publishers', [$publisher->slug, 'north_america']) }}"><p class="game-release">{{ $publisher->name }}</p></a>    
                                 </div>
                             </div>
                             <div class="row text-center">

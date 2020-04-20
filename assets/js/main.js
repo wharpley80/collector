@@ -16,12 +16,17 @@ $(document).ready(function() {
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
-        });
+        });  
     }
 
     setActivePlatform = function() {
         $('.platform-menu .active').removeClass('active');
         $('.platform-' + platformSlug).addClass('active');
+    }
+
+    setActivePublisher = function() {
+        $('.publisher-menu .active').removeClass('active');
+        $('.publisher-' + publisherSlug).addClass('active');
     }
 
     setActiveRegion = function() {
@@ -72,7 +77,7 @@ $(document).ready(function() {
                     var resultList = $('ul.search-result-list');
                     $.each(result, function(i) {
                         if ($('#game-' + result[i]['id']).length == 0) {
-                            var resultUrl = document.location.origin + '/single-game/' + result[i]['platform_slug'] + '/' + result[i]['id'];
+                            var resultUrl = document.location.origin + '/single-game/' + result[i]['id'];
                             var resultLink = $('<a/>')
                                 .addClass('ui-all')
                                 .attr('href', resultUrl)
@@ -172,8 +177,16 @@ $(document).ready(function() {
         });
     }
 
+    if (pageUrl.indexOf('games') > -1) {
+        setActivePlatform();
+    }
+
+    if (pageUrl.indexOf('publisher') > -1) {
+        var publisherSlug  = $('.publisher-slug').text();
+        setActivePublisher();
+    }
+
     activateToolTips();
-    setActivePlatform();
     setActiveRegion();
     clearSearchResults();
     getSearchResults();

@@ -97,7 +97,8 @@ hr {
     PLATFORM BUTTONS
 ************************/
 
-.platform-menu a {
+.platform-menu a,
+.publisher-menu a {
     display: block;
     width: 100%;
     margin: 1px 0;
@@ -105,7 +106,8 @@ hr {
 }
 
 .platform-menu a .active,
-.region-menu .active {
+.region-menu .active,
+.publisher-menu .active {
     background-color: rgb(108, 117, 125);
 }
 
@@ -114,7 +116,8 @@ hr {
 }
 
 .platform-menu a:hover,
-.region-menu a:hover{
+.region-menu a:hover,
+.publisher-menu a:hover {
     background-color: #9f65f7;
 }
 

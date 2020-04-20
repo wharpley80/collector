@@ -52,6 +52,18 @@ class Game extends Model
     }
 
     /**
+     * Returns the publisher for a game.
+     * 
+     * @return Object
+     */
+    public function getPublisher()
+    {
+        $publisher = Publisher::where('id', $this->publisher_id)->first();
+
+        return $publisher ?? '';
+    }
+
+    /**
      * Returns the publisher name for a game.
      * 
      * @return String
